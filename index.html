@@ -1,0 +1,1317 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="ext-resource-dependency" content="images/bean-amederaro.webp" data-resource-id="images/bean-amederaro.webp">
+<meta name="ext-resource-dependency" content="images/bean-borbollon.webp" data-resource-id="images/bean-borbollon.webp">
+<meta name="ext-resource-dependency" content="images/bean-cajarmaca.webp" data-resource-id="images/bean-cajarmaca.webp">
+<meta name="ext-resource-dependency" content="images/bean-elmorito.webp" data-resource-id="images/bean-elmorito.webp">
+<meta name="ext-resource-dependency" content="images/bean-kagumo.webp" data-resource-id="images/bean-kagumo.webp">
+<meta name="ext-resource-dependency" content="images/bean-nkira.webp" data-resource-id="images/bean-nkira.webp">
+<meta name="ext-resource-dependency" content="images/bean-sansebastian.webp" data-resource-id="images/bean-sansebastian.webp">
+<meta name="ext-resource-dependency" content="images/bean-urabeast.webp" data-resource-id="images/bean-urabeast.webp">
+<meta name="ext-resource-dependency" content="images/bean-waliki.webp" data-resource-id="images/bean-waliki.webp">
+<meta name="ext-resource-dependency" content="images/cherries.webp" data-resource-id="images/cherries.webp">
+<meta name="ext-resource-dependency" content="images/cup-c.webp" data-resource-id="images/cup-c.webp">
+<meta name="ext-resource-dependency" content="images/dining-1-c.webp" data-resource-id="images/dining-1-c.webp">
+<meta name="ext-resource-dependency" content="images/food-c.webp" data-resource-id="images/food-c.webp">
+<meta name="ext-resource-dependency" content="images/holding-coffee.webp" data-resource-id="images/holding-coffee.webp">
+<meta name="ext-resource-dependency" content="images/ig-1.jpg" data-resource-id="images/ig-1.jpg">
+<meta name="ext-resource-dependency" content="images/ig-2.jpg" data-resource-id="images/ig-2.jpg">
+<meta name="ext-resource-dependency" content="images/ig-3.jpg" data-resource-id="images/ig-3.jpg">
+<meta name="ext-resource-dependency" content="images/ig-4.jpg" data-resource-id="images/ig-4.jpg">
+<meta name="ext-resource-dependency" content="images/ig-5.jpg" data-resource-id="images/ig-5.jpg">
+<meta name="ext-resource-dependency" content="images/ig-6.jpg" data-resource-id="images/ig-6.jpg">
+<meta name="ext-resource-dependency" content="images/keychains.webp" data-resource-id="images/keychains.webp">
+<meta name="ext-resource-dependency" content="images/loc-asiasquare.webp" data-resource-id="images/loc-asiasquare.webp">
+<meta name="ext-resource-dependency" content="images/loc-eastcoast.webp" data-resource-id="images/loc-eastcoast.webp">
+<meta name="ext-resource-dependency" content="images/loc-tanjong.webp" data-resource-id="images/loc-tanjong.webp">
+<meta name="ext-resource-dependency" content="images/menu-food.webp" data-resource-id="images/menu-food.webp">
+<meta name="ext-resource-dependency" content="images/sourdough.webp" data-resource-id="images/sourdough.webp">
+<meta name="ext-resource-dependency" content="media/espresso-pour.mp4" data-resource-id="media/espresso-pour.mp4">
+<meta name="ext-resource-dependency" content="media/ig-vid-1.mp4" data-resource-id="media/ig-vid-1.mp4">
+<meta name="ext-resource-dependency" content="media/ig-vid-2.mp4" data-resource-id="media/ig-vid-2.mp4">
+<script src="./support.js"></script>
+</head>
+<body>
+<template id="__bundler_thumbnail">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" data-bg-color="#15120f" width="600" height="400">
+  <rect width="600" height="400" fill="#15120f"></rect>
+  <circle cx="300" cy="186" r="66" fill="none" stroke="#c67139" stroke-width="10"></circle>
+  <text x="300" y="204" text-anchor="middle" font-family="Georgia,serif" font-size="58" fill="#f5ead8">5</text>
+  <text x="300" y="306" text-anchor="middle" font-family="Georgia,serif" font-size="30" fill="#f5ead8">Five Oars</text>
+</svg>
+</template>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Five Oars Coffee Roasters</title>
+<link rel="icon" href="images/favicon.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Figtree:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: #f5ead8; color: #201e1d; font-family: Figtree, system-ui, sans-serif; font-size: 20px; font-weight: 500; line-height: 1.55; -webkit-font-smoothing: antialiased; text-wrap: pretty; }
+  a { color: #8f4d21; text-decoration: none; transition: color .18s cubic-bezier(.2,.7,.2,1); }
+  a:hover { color: #c67139; }
+  ::selection { background: rgba(198,113,57,.25); }
+  button, input, select, textarea { font: inherit; color: inherit; }
+  :focus-visible { outline: 2px solid #c67139; outline-offset: 2px; }
+  @keyframes focr-in { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
+  @keyframes focr-glide { 0% { transform: scale(1.05) translate3d(1.5%,1%,0); } 100% { transform: scale(1.26) translate3d(-4%,-3%,0); } }
+  @keyframes focr-drift { 0% { transform: scale(-1.04,1.04) translate3d(-1.5%,-1%,0); } 100% { transform: scale(-1.16,1.16) translate3d(2.5%,1.5%,0); } }
+  [data-desknav] a, [data-nowrap] { white-space: nowrap; }
+  @media (max-width: 1020px) {
+    [data-desknav] { display: none !important; }
+    [data-burger] { display: inline-flex !important; }
+    [data-mobilebar] { display: flex !important; }
+    [data-splitflip] { flex-direction: column !important; }
+    [data-heroblock] { bottom: 116px !important; }
+    [data-herocue] { display: none !important; }
+    [data-sidebyside] { grid-template-columns: 1fr !important; }
+    [data-masonry] { column-count: 2 !important; column-gap: 26px !important; }
+  }
+  @media (max-width: 620px) {
+    [data-masonry] { column-count: 1 !important; }
+  }
+</style>
+</helmet>
+
+<div style="min-height:100vh;background:#f5ead8">
+
+  <div id="focr-chrome" style="position:fixed;top:0;left:0;right:0;z-index:60">
+
+  <header style="background:rgba(32,30,29,.94);backdrop-filter:blur(14px);border-bottom:1px solid rgba(245,234,216,.12)">
+    <div style="max-width:1240px;margin:0 auto;padding:12px clamp(20px,5vw,56px);display:flex;align-items:center;gap:24px">
+      <a href="#home" style="display:flex;align-items:center;gap:12px;color:#f5ead8;flex:0 0 auto">
+        <img src="images/logo-white.webp" alt="Five Oars Coffee Roasters" style="height:46px;width:auto;display:block">
+      </a>
+      <nav data-desknav="" style="display:flex;gap:2px;margin-left:auto;align-items:center;flex:0 0 auto">
+        <sc-for list="{{ navItems }}" as="n" hint-placeholder-count="6">
+          <a href="{{ n.href }}" onMouseEnter="{{ n.enter }}" onMouseLeave="{{ n.leave }}" style="display:inline-flex;align-items:center;padding:9px 13px;border-radius:999px;color:rgba(245,234,216,.9);font-weight:500;font-size:15px;transition:background .18s cubic-bezier(.2,.7,.2,1),color .18s ease" style-hover="background:rgba(198,113,57,.22);color:#f5ead8">
+            <span style="{{ n.eStyle }}">{{ n.emoji }}</span>{{ n.label }}
+          </a>
+        </sc-for>
+      </nav>
+      <div style="display:flex;gap:10px;align-items:center;margin-left:auto;flex:0 0 auto">
+        <sc-if value="{{ hasCart }}">
+          <button data-nowrap="" onClick="{{ openCart }}" aria-label="Open cart" style="position:relative;background:transparent;border:1px solid rgba(245,234,216,.35);color:#f5ead8;border-radius:999px;padding:9px 16px;cursor:pointer;font-size:15px;font-weight:500;transition:.18s cubic-bezier(.2,.7,.2,1)" style-hover="border-color:#c67139;color:#c67139">Cart · {{ cartCount }}</button>
+        </sc-if>
+        <a data-desknav="" data-nowrap="" href="#reservations" style="background:#c67139;color:#f5ead8;border-radius:999px;padding:11px 20px;font-weight:600;font-size:15px;transition:.18s cubic-bezier(.2,.7,.2,1)" style-hover="background:#a95a28;color:#f5ead8">Reserve a Table</a>
+        <button data-burger="" onClick="{{ toggleNav }}" aria-label="Menu" style="display:none;align-items:center;justify-content:center;width:42px;height:42px;border-radius:999px;border:1px solid rgba(245,234,216,.35);color:#f5ead8;background:transparent;cursor:pointer;font-size:19px">≡</button>
+      </div>
+    </div>
+    <sc-if value="{{ navOpen }}">
+      <div style="display:flex;flex-direction:column;padding:8px 24px 20px;gap:2px;border-top:1px solid rgba(245,234,216,.12)">
+        <sc-for list="{{ navItems }}" as="n" hint-placeholder-count="6">
+          <a href="{{ n.href }}" onClick="{{ closeNav }}" style="display:flex;align-items:center;gap:12px;padding:12px 4px;font-size:22px;font-family:'Instrument Serif',Georgia,serif;color:#f5ead8">
+            <span style="font-size:19px">{{ n.emoji }}</span>{{ n.label }}
+          </a>
+        </sc-for>
+      </div>
+    </sc-if>
+  </header>
+  </div>
+
+  <main style="display:block">
+
+  <sc-if value="{{ isHome }}" hint-placeholder-val="{{ true }}">
+    <div>
+      <section id="focr-hero" style="position:relative;height:420vh">
+        <div style="position:sticky;top:0;height:100dvh;overflow:hidden;background:#15120f">
+          <img src="images/frame-1.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.9) contrast(1.02)">
+          <video id="focr-hero-video" muted="" playsinline="" preload="auto" src="{{ heroVideoSrc }}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.9) contrast(1.02);opacity:0;transition:opacity .6s ease"></video>
+          <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(24,20,17,.9) 0%,rgba(24,20,17,.24) 45%,rgba(24,20,17,.9) 100%),radial-gradient(115% 75% at 50% 42%,transparent 30%,rgba(14,11,9,.82) 100%);pointer-events:none"></div>
+          <div data-hero-band="" data-mode="out" data-a="0" data-b="0.16" data-heroblock="" style="position:absolute;left:clamp(20px,5vw,64px);bottom:clamp(28px,6vw,64px);color:#f5ead8;pointer-events:none;max-width:min(660px,64vw)">
+            <img src="images/logo-white.webp" alt="Five Oars Coffee Roasters" style="display:block;width:min(420px,60vw);height:auto;margin:0 0 22px;filter:drop-shadow(0 2px 30px rgba(14,11,9,.6))">
+            <p style="margin:0;font-size:13px;font-weight:600;letter-spacing:.36em;text-transform:uppercase;opacity:.72">Singapore, since 2018</p>
+          </div>
+          <div data-hero-band="" data-a="0.16" data-b="0.44" style="position:absolute;right:clamp(20px,6vw,88px);top:50%;transform:translateY(-50%);width:min(560px,76vw);text-align:right;pointer-events:none;opacity:0">
+            <p style="margin:0;font-family:'Instrument Serif',Georgia,serif;font-size:clamp(49px,7.3vw,101px);line-height:1.04;letter-spacing:-.02em;color:#f5ead8;text-shadow:0 2px 40px rgba(14,11,9,.55)">Crafted from the ground up.</p>
+          </div>
+          <div data-hero-band="" data-a="0.44" data-b="0.72" style="position:absolute;right:clamp(20px,6vw,88px);top:50%;transform:translateY(-50%);width:min(560px,76vw);text-align:right;pointer-events:none;opacity:0">
+            <p style="margin:0;font-family:'Instrument Serif',Georgia,serif;font-size:clamp(49px,7.3vw,101px);line-height:1.04;letter-spacing:-.02em;color:#f5ead8;text-shadow:0 2px 40px rgba(14,11,9,.55)">Every drop, perfected.</p>
+          </div>
+          <div data-hero-band="" data-a="0.72" data-b="1.0" style="position:absolute;right:clamp(20px,6vw,88px);top:50%;transform:translateY(-50%);width:min(560px,76vw);text-align:right;pointer-events:none;opacity:0">
+            <p style="margin:0;font-family:'Instrument Serif',Georgia,serif;font-size:clamp(49px,7.3vw,101px);line-height:1.04;letter-spacing:-.02em;color:#f5ead8;text-shadow:0 2px 40px rgba(14,11,9,.55)">Experience pure flavour.</p>
+          </div>
+          <div data-herocue="" data-hero-band="" data-mode="out" data-a="0" data-b="0.12" style="position:absolute;right:clamp(20px,5vw,64px);bottom:clamp(28px,6vw,64px);color:rgba(245,234,216,.6);font-size:12px;font-weight:600;letter-spacing:.36em;text-transform:uppercase;pointer-events:none">Scroll</div>
+          <div style="position:absolute;left:0;right:0;bottom:0;height:2px;background:rgba(245,234,216,.14);pointer-events:none">
+            <div id="focr-hero-progress" style="height:100%;width:0%;background:#c67139"></div>
+          </div>
+        </div>
+      </section>
+
+      <section style="max-width:1240px;margin:0 auto;padding:clamp(72px,9vw,136px) clamp(20px,5vw,56px)">
+        <div data-reveal="" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:clamp(32px,5vw,72px);align-items:start">
+          <p style="margin:0;font-family:'Instrument Serif',Georgia,serif;font-size:clamp(31px,3.4vw,46px);line-height:1.18">We are a local homegrown cafe that believes in connecting the community through our signature brunch classics and freshly roasted coffee.</p>
+          <div>
+            <p style="margin:0 0 22px;font-size:21px;color:rgba(32,30,29,.9)">Here at Five Oars, we pride ourselves on using high quality ingredients &amp; making our food from scratch. From housemade breads &amp; pastas to our sauces, we strive to ensure that we only serve the best.</p>
+            <a href="#story" style="display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(32,30,29,.25);border-radius:999px;padding:12px 22px;font-weight:600;color:#201e1d;transition:.18s cubic-bezier(.2,.7,.2,1)" style-hover="border-color:#c67139;color:#8f4d21">Our story →</a>
+          </div>
+        </div>
+      </section>
+
+      <section style="position:relative;height:min(84vh,780px);overflow:hidden;background:#15120f">
+        <img src="images/cup-c.webp" alt="Espresso extraction" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:focr-glide 25s ease-in-out infinite alternate">
+        <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,11,9,.5) 0%,rgba(14,11,9,.25) 40%,rgba(14,11,9,.92) 100%);pointer-events:none"></div>
+        <div style="position:absolute;inset:auto 0 0 0;padding:0 clamp(20px,5vw,56px) clamp(44px,7vw,84px);pointer-events:none">
+          <div style="max-width:1240px;margin:0 auto;color:#f5ead8">
+            <p style="margin:0 0 18px;font-size:13px;font-weight:600;letter-spacing:.36em;text-transform:uppercase;color:rgba(245,234,216,.65)">Extraction</p>
+            <h2 style="margin:0 0 30px;max-width:20ch;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(52px,8.6vw,125px);line-height:1;letter-spacing:-.02em">Twenty-five seconds decide the cup.</h2>
+            <div style="display:flex;flex-wrap:wrap;gap:clamp(20px,4vw,64px)">
+              <p style="margin:0;font-size:16px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(245,234,216,.72)">0:06, first drops</p>
+              <p style="margin:0;font-size:16px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(245,234,216,.72)">0:14, crema turns gold</p>
+              <p style="margin:0;font-size:16px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(245,234,216,.72)">0:25, cut the shot</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section style="background:#efe0c8;padding:clamp(60px,8vw,112px) 0">
+        <div style="max-width:1240px;margin:0 auto;padding:0 clamp(20px,5vw,56px)">
+          <div style="display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:40px">
+            <h2 style="margin:0;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(36px,4.4vw,62px);line-height:1.05">Three rooms,<br>one roast</h2>
+            <a href="#locations" style="font-weight:600">All locations &amp; hours →</a>
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
+            <sc-for list="{{ locations }}" as="loc" hint-placeholder-count="3">
+              <article data-reveal="" style="background:#fffaf1;border-radius:24px;overflow:hidden">
+                <div style="height:190px;position:relative;overflow:hidden;background:#efe0c8">
+                  <img src="{{ loc.cover }}" alt="{{ loc.name }}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:focr-glide 30s ease-in-out infinite alternate">
+                </div>
+                <div style="padding:24px">
+                  <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
+                    <span style="width:8px;height:8px;border-radius:999px;background:{{ loc.dot }}"></span>
+                    <span style="font-size:14px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:rgba(32,30,29,.8)">{{ loc.status }}</span>
+                  </div>
+                  <h3 style="margin:0 0 6px;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:28px">{{ loc.name }}</h3>
+                  <p style="margin:0 0 4px;color:rgba(32,30,29,.86);font-size:18px">{{ loc.address }}</p>
+                  <p style="margin:0;font-size:18px;font-weight:600">{{ loc.hours }}</p>
+                </div>
+              </article>
+            </sc-for>
+          </div>
+        </div>
+      </section>
+
+      <section style="position:relative;overflow:hidden;background:#15120f">
+        <img src="images/harvest-hands.webp" alt="Hands holding freshly picked coffee cherries" style="position:absolute;inset:-6%;width:112%;height:112%;object-fit:cover;animation:focr-drift 42s ease-in-out infinite alternate">
+        <div style="position:absolute;inset:0;background:linear-gradient(105deg,rgba(14,11,9,.92) 0%,rgba(14,11,9,.78) 42%,rgba(14,11,9,.42) 100%)"></div>
+        <div style="position:relative;max-width:1240px;margin:0 auto;padding:clamp(72px,9vw,128px) clamp(20px,5vw,56px)">
+        <div data-splitflip="" style="display:flex;gap:clamp(28px,5vw,72px);align-items:center">
+          <div style="flex:1 1 300px;min-width:0;color:#f5ead8">
+            <p style="margin:0 0 14px;font-size:13px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:#e2a774">On the shelf</p>
+            <h2 style="margin:0 0 20px;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(36px,4.6vw,64px);line-height:1.03">Nine lots, rotated through the season</h2>
+            <p style="margin:0 0 28px;font-size:21px;color:rgba(245,234,216,.88)">From a natural Yirgacheffe to a washed Bourbon out of Santa Ana, every bag carries the farm, the varietal and the process it came from. Roasted in small batches for espresso and filter, and shipped within days of roast.</p>
+            <a href="#shop" style="display:inline-block;background:#c67139;color:#f5ead8;border-radius:999px;padding:15px 28px;font-weight:600;transition:.18s cubic-bezier(.2,.7,.2,1)" style-hover="background:#e08a4a;color:#15120f">Shop coffee beans</a>
+          </div>
+          <div style="flex:1 1 380px;min-width:0;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:start">
+            <sc-for list="{{ shelf }}" as="sp" hint-placeholder-count="3">
+              <a href="#shop" style="display:flex;flex-direction:column;gap:14px;background:#efe0c8;border-radius:24px;padding:18px;margin-top:{{ sp.offset }};transition:transform .28s cubic-bezier(.2,.7,.2,1)" style-hover="transform:translateY(-5px)">
+                <span style="display:block;position:relative;aspect-ratio:3/4;border-radius:16px;overflow:hidden;background:#fffaf1">
+                  <img src="{{ sp.img }}" alt="{{ sp.name }}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:10px;transition:transform .5s cubic-bezier(.2,.7,.2,1)" style-hover="transform:scale(1.05)">
+                </span>
+                <span style="display:block;padding:0 4px 4px">
+                  <span style="display:block;font-family:'Instrument Serif',Georgia,serif;font-size:22px;line-height:1.1;color:#201e1d">{{ sp.name }}</span>
+                  <span style="display:block;margin-top:5px;font-size:14px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#8f4d21">{{ sp.origin }}</span>
+                </span>
+              </a>
+            </sc-for>
+          </div>
+        </div>
+        </div>
+      </section>
+
+      <section id="social" data-socialsection="" style="background:#efe0c8;padding:clamp(60px,8vw,112px) 0">
+        <div style="max-width:1240px;margin:0 auto;padding:0 clamp(20px,5vw,56px)">
+          <div style="display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:34px">
+            <div>
+              <p style="margin:0 0 12px;font-size:13px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:#8f4d21">Follow along</p>
+              <h2 style="margin:0;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(36px,4.4vw,62px);line-height:1.05">Mornings at the bar,<br>posted as they happen</h2>
+            </div>
+            <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center">
+              <a href="https://www.instagram.com/focr.sg/?hl=en" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:9px;background:#201e1d;color:#f5ead8;border-radius:999px;padding:13px 22px;font-weight:600;font-size:17px;transition:.18s cubic-bezier(.2,.7,.2,1)" style-hover="background:#c67139;color:#f5ead8">
+                <span style="width:16px;height:16px;border:2px solid currentColor;border-radius:5px;display:inline-block;position:relative" style-after="content:'';position:absolute;inset:3px;border:2px solid currentColor;border-radius:999px"></span>@focr.sg
+              </a>
+              <a href="https://www.facebook.com/focr.sg" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:9px;border:1px solid rgba(32,30,29,.25);color:#201e1d;border-radius:999px;padding:13px 22px;font-weight:600;font-size:17px;transition:.18s cubic-bezier(.2,.7,.2,1)" style-hover="border-color:#c67139;color:#8f4d21">
+                <span style="font-family:'Instrument Serif',Georgia,serif;font-size:20px;line-height:1">f</span>Facebook
+              </a>
+              <div style="display:flex;gap:8px;margin-left:6px">
+                <button onClick="{{ socialPrev }}" aria-label="Previous posts" style="width:46px;height:46px;border-radius:999px;border:1px solid rgba(32,30,29,.25);background:transparent;cursor:pointer;font-size:18px;transition:.18s cubic-bezier(.2,.7,.2,1)" style-hover="border-color:#c67139;color:#8f4d21;transform:translateX(-2px)">←</button>
+                <button onClick="{{ socialNext }}" aria-label="More posts" style="width:46px;height:46px;border-radius:999px;border:1px solid rgba(32,30,29,.25);background:transparent;cursor:pointer;font-size:18px;transition:.18s cubic-bezier(.2,.7,.2,1)" style-hover="border-color:#c67139;color:#8f4d21;transform:translateX(2px)">→</button>
+              </div>
+            </div>
+          </div>
+          <div data-masonry="" style="column-count:3;column-gap:34px;transition:opacity .26s ease,transform .32s cubic-bezier(.22,.72,.2,1);{{ socialFade }}">
+            <sc-for list="{{ socialItems }}" as="s" hint-placeholder-count="6">
+              <figure style="margin:0 0 34px;break-inside:avoid;background:#fffaf1;border-radius:20px;overflow:hidden">
+                <div style="position:relative;aspect-ratio:{{ s.ratio }};overflow:hidden;background:#efe0c8">
+                  <sc-if value="{{ s.isVideo }}">
+                    <video data-socialvideo="" src="{{ s.src }}" muted="" loop="" playsinline="" onClick="{{ s.toggle }}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;cursor:pointer"></video>
+                  </sc-if>
+                  <sc-if value="{{ s.isImage }}">
+                    <img src="{{ s.src }}" alt="{{ s.title }}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .4s cubic-bezier(.2,.7,.2,1)" style-hover="transform:scale(1.06)">
+                  </sc-if>
+                  <sc-if value="{{ s.isVideo }}">
+                    <span style="position:absolute;left:12px;top:12px;background:rgba(20,17,14,.7);color:#f5ead8;border-radius:999px;padding:5px 12px;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;pointer-events:none">Reel</span>
+                  </sc-if>
+                </div>
+                <figcaption style="padding:14px 16px 16px">
+                  <p style="margin:0 0 4px;font-family:'Instrument Serif',Georgia,serif;font-size:20px;line-height:1.2">{{ s.title }}</p>
+                  <p style="margin:0 0 9px;font-size:15px;color:rgba(32,30,29,.78)">{{ s.caption }}</p>
+                  <a href="{{ s.href }}" target="_blank" rel="noopener" style="font-size:13px;font-weight:600;letter-spacing:.1em;text-transform:uppercase">View post →</a>
+                </figcaption>
+              </figure>
+            </sc-for>
+          </div>
+        </div>
+      </section>
+
+      <section style="position:relative;background:#15120f;color:#f5ead8;padding:clamp(76px,10vw,152px) 0;overflow:hidden">
+        <img src="images/dining-2-c.webp" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.5;animation:focr-glide 34s ease-in-out infinite alternate">
+        <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,11,9,.82),rgba(14,11,9,.9))"></div>
+        <div style="position:relative;max-width:1240px;margin:0 auto;padding:0 clamp(20px,5vw,56px);display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:36px;align-items:center">
+          <div>
+            <h2 style="margin:0 0 16px;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(52px,7.3vw,101px);line-height:1;letter-spacing:-.02em">Book a table before you walk over</h2>
+            <p style="margin:0;color:rgba(245,234,216,.88);font-size:21px">Weekend brunch fills early at both dining outlets. Reserve in under a minute.</p>
+          </div>
+          <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:flex-end">
+            <a href="#reservations" style="background:#f5ead8;color:#201e1d;border-radius:999px;padding:16px 30px;font-weight:600;font-size:19px;transition:.18s cubic-bezier(.2,.7,.2,1)" style-hover="background:#fffaf1;color:#201e1d">Reserve a table</a>
+            <a href="#menu" style="border:1px solid rgba(245,234,216,.4);color:#f5ead8;border-radius:999px;padding:16px 30px;font-weight:600;font-size:19px;transition:.18s cubic-bezier(.2,.7,.2,1)" style-hover="border-color:#c67139;color:#f5ead8">See the menu</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{ isMenu }}">
+    <div>
+      <section style="position:relative;height:min(78vh,660px);overflow:hidden;background:#15120f">
+        <img src="images/menu-food.webp" alt="Brunch on the table" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:focr-glide 27s ease-in-out infinite alternate">
+        <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,11,9,.55),rgba(14,11,9,.35) 45%,rgba(14,11,9,.92))"></div>
+        <div style="position:absolute;inset:auto 0 0 0;padding:0 clamp(20px,5vw,56px) clamp(36px,5vw,64px)">
+          <div style="max-width:1240px;margin:0 auto;color:#f5ead8">
+            <nav style="display:flex;gap:10px;align-items:center;font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;margin-bottom:20px">
+              <a href="#home" style="color:rgba(245,234,216,.7)" style-hover="color:#f5ead8">Home</a><span style="color:rgba(245,234,216,.45)">→</span><span>Menu</span>
+            </nav>
+            <p style="margin:0 0 14px;font-size:13px;font-weight:600;letter-spacing:.36em;text-transform:uppercase;color:rgba(245,234,216,.65)">Day · Night · Drinks</p>
+            <h1 style="margin:0 0 16px;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(68px,12.5vw,166px);line-height:.92;letter-spacing:-.02em">Menu</h1>
+            <p style="margin:0;max-width:52ch;font-size:21px;color:rgba(245,234,216,.86)">Brunch classics from open, a night menu from six, and coffee pulled from whichever blend is on the bar this fortnight.</p>
+          </div>
+        </div>
+      </section>
+      <section style="max-width:1240px;margin:0 auto;padding:clamp(40px,5vw,64px) clamp(20px,5vw,56px) 100px">
+        <p style="margin:0 0 36px;max-width:58ch;font-family:'Instrument Serif',Georgia,serif;font-size:clamp(26px,2.8vw,38px);line-height:1.22;color:#201e1d">We invite you to join us on our culinary adventure – so let’s get hungry.</p>
+        <div style="position:sticky;top:{{ stickyTop }};z-index:20;background:rgba(245,234,216,.94);backdrop-filter:blur(10px);padding:12px 0;margin-bottom:12px;display:flex;gap:8px;overflow-x:auto">
+          <sc-for list="{{ filters }}" as="f" hint-placeholder-count="5">
+            <button onClick="{{ f.set }}" style="flex:0 0 auto;border-radius:999px;padding:10px 20px;font-weight:600;font-size:17px;cursor:pointer;transition:.18s cubic-bezier(.2,.7,.2,1);border:1px solid {{ f.border }};background:{{ f.bg }};color:{{ f.fg }}">{{ f.label }}</button>
+          </sc-for>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(420px,1fr));gap:6px clamp(32px,5vw,72px)">
+          <sc-for list="{{ menuList }}" as="item" hint-placeholder-count="8">
+            <div style="display:flex;gap:20px;align-items:flex-start;padding:20px 0;border-bottom:1px solid rgba(32,30,29,.1)">
+              <div style="flex: 1 1 auto; min-width: 0; margin-top: 20px; margin-bottom: 20px">
+                <div style="display:flex;gap:10px;align-items:baseline;justify-content:space-between">
+                  <h3 style="margin: 0; font-size: 26px; font-weight: 600; color: #201E1DCC">{{ item.name }}</h3>
+                  <span style="font-family:'Instrument Serif',Georgia,serif;font-size:21px;flex:0 0 auto">{{ item.price }}</span>
+                </div>
+                <p style="margin:5px 0 0;color:rgba(32,30,29,.86);font-size:17px">{{ item.desc }}</p>
+                <p style="margin: 7px 0 0; font-family: 'Instrument Serif',Georgia,serif; font-style: italic; font-size: 22px; line-height: 1.35; color: #201E1DE6; margin-bottom: 20px">{{ item.story }}</p>
+                <div style="display:flex;gap:7px;flex-wrap:wrap;margin-top:10px">
+                  <sc-for list="{{ item.tags }}" as="t" hint-placeholder-count="1">
+                    <span style="display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:{{ t.fg }};background:{{ t.bg }};border-radius:999px;padding:5px 11px">{{ t.emoji }} {{ t.label }}</span>
+                  </sc-for>
+                </div>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+        <p style="margin:40px 0 0;font-size:17px;color:rgba(32,30,29,.78)">Night menu served from 6pm at Heritage and Upper East Coast. Prices in SGD, subject to service charge and GST.</p>
+      </section>
+      <section style="position:relative;height:min(92vh,860px);overflow:hidden;background:#15120f">
+        <img src="images/food-c.webp" alt="Night service" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:focr-glide 35s ease-in-out infinite alternate">
+        <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,11,9,.3),rgba(14,11,9,.85))"></div>
+        <div style="position:absolute;inset:auto 0 0 0;padding:0 clamp(20px,5vw,56px) clamp(44px,7vw,84px)">
+          <div style="max-width:1240px;margin:0 auto;color:#f5ead8">
+            <h2 style="margin:0 0 14px;max-width:22ch;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(49px,7.8vw,112px);line-height:1;letter-spacing:-.02em">The kitchen keeps going after dark</h2>
+            <p style="margin:0;max-width:48ch;font-size:21px;color:rgba(245,234,216,.85)">Housemade pasta, wood-charred sides and a short wine list, from six until close.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{ isStory }}">
+    <div>
+      <section style="position:relative;height:min(78vh,660px);overflow:hidden;background:#15120f">
+        <img src="images/dining-1-c.webp" alt="The dining room" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:focr-glide 29s ease-in-out infinite alternate">
+        <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,11,9,.55),rgba(14,11,9,.3) 45%,rgba(14,11,9,.92))"></div>
+        <div style="position:absolute;inset:auto 0 0 0;padding:0 clamp(20px,5vw,56px) clamp(36px,5vw,64px)">
+          <div style="max-width:1240px;margin:0 auto;color:#f5ead8">
+            <nav style="display:flex;gap:10px;align-items:center;font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;margin-bottom:20px">
+              <a href="#home" style="color:rgba(245,234,216,.7)" style-hover="color:#f5ead8">Home</a><span style="color:rgba(245,234,216,.45)">→</span><span>Our Story</span>
+            </nav>
+            <p style="margin:0 0 14px;font-size:13px;font-weight:600;letter-spacing:.36em;text-transform:uppercase;color:rgba(245,234,216,.65)">Since 2018</p>
+            <h1 style="margin:0 0 16px;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(60px,10.4vw,140px);line-height:.94;letter-spacing:-.02em">Our Story</h1>
+            <p style="margin:0;max-width:52ch;font-size:21px;color:rgba(245,234,216,.86)">One shophouse on Tanjong Pagar Road, a move east, and a return to where it started.</p>
+          </div>
+        </div>
+      </section>
+      <section style="max-width:1240px;margin:0 auto;padding:clamp(48px,6vw,88px) clamp(20px,5vw,56px) 100px">
+        <div data-sidebyside="" style="display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(32px,5vw,72px);align-items:start">
+          <div>
+            <p style="margin:0 0 26px;font-family:'Instrument Serif',Georgia,serif;font-size:clamp(28px,3.2vw,42px);line-height:1.2">We are a local homegrown cafe that believes in connecting the community through our signature brunch classics and freshly roasted coffee.</p>
+            <p style="margin:0 0 22px;font-size:21px;color:rgba(32,30,29,.9)">Five Oars began on Tanjong Pagar Road as one of the first minimalist cafes in the neighbourhood, moved east to Upper East Coast, and returned to Tanjong Pagar as Heritage, a Melbourne-inspired room that runs from morning coffee through to a night menu.</p>
+            <p style="margin:0 0 22px;font-size:21px;color:rgba(32,30,29,.9)">Here at Five Oars, we pride ourselves on using high quality ingredients &amp; making our food from scratch. From housemade breads &amp; pastas to our sauces, we strive to ensure that we only serve the best.</p>
+            <p style="margin:0 0 22px;font-size:21px;color:rgba(32,30,29,.9)">As the story goes, we were just friends in a living room, raving about the simple satisfaction that great coffee brings and Five Oars Coffee Roasters was born.</p>
+            <p style="margin:0 0 22px;font-size:21px;color:rgba(32,30,29,.9)">We sought to discover flavours and aromas of life hidden in bean varietals all over the world, and make them known to the world back home. Delicious food and coffee, coupled with unforgettable service can catch you up in the weekend you so crave and deserve — We know this from experience.</p>
+            <p style="margin:0 0 22px;font-size:21px;color:rgba(32,30,29,.9)">But we needed to carve out a place of respite in our concrete jungle to practice and enjoy our craft with those who appreciate it most. That sense of comfort in community is our anchor.</p>
+            <p style="margin:0;font-size:21px;color:rgba(32,30,29,.9)">We hope you would join us on this leg of the Five Oars Coffee Journey as we take our craftsmanship up a notch. Step on board and sail into the endless weekend with the ones you call home.</p>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:20px">
+            <sc-for list="{{ storyStats }}" as="s" hint-placeholder-count="3">
+              <div style="background:#fffaf1;border-radius:24px;padding:28px">
+                <p style="margin:0;font-family:'Instrument Serif',Georgia,serif;font-size:48px;line-height:1;color:#c67139">{{ s.n }}</p>
+                <p style="margin:8px 0 0;font-size:18px;color:rgba(32,30,29,.88)">{{ s.label }}</p>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+      </section>
+      <section style="position:relative;height:min(92vh,860px);overflow:hidden;background:#15120f">
+        <img src="images/farm-canopy.jpeg" alt="Aerial view of coffee growing under a canopy of trees" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:focr-glide 35s ease-in-out infinite alternate">
+        <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,11,9,.25),rgba(14,11,9,.85))"></div>
+        <div style="position:absolute;inset:auto 0 0 0;padding:0 clamp(20px,5vw,56px) clamp(44px,7vw,84px)">
+          <div style="max-width:1240px;margin:0 auto;color:#f5ead8">
+            <h2 style="margin:0 0 14px;max-width:24ch;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(49px,7.8vw,112px);line-height:1;letter-spacing:-.02em">Coffee in harmony with nature</h2>
+            <p style="margin:0;max-width:52ch;font-size:21px;color:rgba(245,234,216,.85)">The farm stretches beneath a canopy of trees, where coffee thrives in harmony with nature. During harvest, Pharn and the team work tirelessly ensuring every cherry is picked at its peak.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{ isShop }}">
+    <div>
+      <section style="position:relative;height:min(78vh,660px);overflow:hidden;background:#15120f">
+        <img src="images/cherries.webp" alt="Ripe coffee cherries" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:focr-glide 27s ease-in-out infinite alternate">
+        <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,11,9,.5),rgba(14,11,9,.3) 45%,rgba(14,11,9,.92))"></div>
+        <div style="position:absolute;inset:auto 0 0 0;padding:0 clamp(20px,5vw,56px) clamp(36px,5vw,64px)">
+          <div style="max-width:1240px;margin:0 auto;color:#f5ead8">
+            <nav style="display:flex;gap:10px;align-items:center;font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;margin-bottom:20px">
+              <a href="#home" style="color:rgba(245,234,216,.7)" style-hover="color:#f5ead8">Home</a><span style="color:rgba(245,234,216,.45)">→</span><span>Shop</span>
+            </nav>
+            <p style="margin:0 0 14px;font-size:13px;font-weight:600;letter-spacing:.36em;text-transform:uppercase;color:rgba(245,234,216,.65)">Roasted in Singapore</p>
+            <h1 style="margin:0 0 16px;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(65px,11.7vw,156px);line-height:.92;letter-spacing:-.02em">Shop</h1>
+            <p style="margin:0;max-width:52ch;font-size:21px;color:rgba(245,234,216,.86)">Single origin lots, shipped within days of roast.</p>
+          </div>
+        </div>
+      </section>
+      <section style="max-width:1240px;margin:0 auto;padding:clamp(48px,6vw,88px) clamp(20px,5vw,56px) 100px">
+        <div style="display:flex;gap:8px;overflow-x:auto;padding-bottom:6px;margin-bottom:28px">
+          <sc-for list="{{ flavourFilters }}" as="f" hint-placeholder-count="5">
+            <button onClick="{{ f.set }}" style="flex:0 0 auto;border-radius:999px;padding:10px 20px;font-weight:600;font-size:17px;cursor:pointer;transition:.18s cubic-bezier(.2,.7,.2,1);border:1px solid {{ f.border }};background:{{ f.bg }};color:{{ f.fg }}">{{ f.label }}</button>
+          </sc-for>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:28px">
+          <sc-for list="{{ products }}" as="p" hint-placeholder-count="6">
+            <article style="background:#fffaf1;border-radius:26px;overflow:hidden;display:flex;flex-direction:column;transition:transform .22s cubic-bezier(.2,.7,.2,1)" style-hover="transform:translateY(-4px)">
+              <button onClick="{{ p.open }}" aria-label="{{ p.name }} details" style="all:unset;cursor:pointer;display:block;position:relative;aspect-ratio:1/1;overflow:hidden;background:#e8e3dc">
+                <img src="{{ p.img }}" alt="{{ p.name }}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .55s cubic-bezier(.2,.7,.2,1)" style-hover="transform:scale(1.07) translate3d(-1.5%,-1.5%,0)">
+              </button>
+              <div style="padding:22px;display:flex;flex-direction:column;gap:10px;flex:1 1 auto">
+                <div style="display:flex;justify-content:space-between;gap:12px;align-items:baseline">
+                  <h3 style="margin: 0; font-family: 'Instrument Serif',Georgia,serif; font-weight: 400; font-size: 34px">{{ p.name }}</h3>
+                  <span style="font-weight:600;font-size:18px">{{ p.price }}</span>
+                </div>
+                <p style="margin:0;font-size:15px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#8f4d21">{{ p.origin }}</p>
+                <p style="margin:0;font-size:17px;color:rgba(32,30,29,.86);flex:1 1 auto">{{ p.notes }}</p>
+                <div style="display:flex;gap:10px;margin-top:6px">
+                  <button onClick="{{ p.add }}" style="flex:1 1 auto;background:#e5b98d;color:#4a2711;border:0;border-radius:999px;padding:13px 18px;font-weight:600;font-size:17px;cursor:pointer;transition:.18s cubic-bezier(.2,.7,.2,1)" style-hover="background:#d8a570">Add to cart</button>
+                  <button onClick="{{ p.open }}" style="background:transparent;border:1px solid rgba(32,30,29,.2);border-radius:999px;padding:13px 18px;font-weight:600;font-size:17px;cursor:pointer;transition:.18s cubic-bezier(.2,.7,.2,1)" style-hover="border-color:#c67139;color:#8f4d21">Details</button>
+                </div>
+              </div>
+            </article>
+          </sc-for>
+        </div>
+        <div data-sidebyside="" style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,4vw,60px);align-items:center;margin-top:clamp(56px,7vw,96px)">
+          <div>
+            <p style="margin:0 0 14px;font-size:13px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:#8f4d21">Where the beans come from</p>
+            <h2 style="margin:0 0 20px;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(32px,3.8vw,52px);line-height:1.06">Coffee that carries a name, a valley and a season</h2>
+            <p style="margin:0 0 18px;font-size:21px;color:rgba(32,30,29,.9)">Every lot on this page came from a farm we buy from directly, season after season. Pharn picks 50 to 70 kilograms of cherries a day in Laos. In Nyeri, the Kagumo washing station dries its naturals on raised beds for three weeks. We pay for that care, and you can taste where it went.</p>
+            <p style="margin:0;font-size:21px;color:rgba(32,30,29,.9)">Roasting happens in small batches at Upper East Coast, cupped on the same bar that serves it. Pick a lot and follow it through the fortnight, or ask the bar which one is drinking best today.</p>
+          </div>
+          <div style="border-radius:28px;overflow:hidden;aspect-ratio:4/3;position:relative;background:#efe0c8">
+            <img src="images/farmer-pharn.webp" alt="Pharn Norlapha with the day's harvest" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:focr-glide 30s ease-in-out infinite alternate">
+          </div>
+        </div>
+        <div data-sidebyside="" style="display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(28px,4vw,60px);align-items:center;margin-top:clamp(40px,5vw,72px)">
+          <div style="border-radius:28px;overflow:hidden;aspect-ratio:4/3;position:relative;background:#efe0c8">
+            <img src="images/farmer-vixay.webp" alt="Vixay Huaywaiy picking coffee in his village" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:focr-glide 32s ease-in-out infinite alternate">
+          </div>
+          <div>
+            <p style="margin:0 0 14px;font-size:13px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:#8f4d21">Vixay Huaywaiy, six hectares</p>
+            <p style="margin:0;font-size:21px;color:rgba(32,30,29,.9)">Vixay, 55, has been growing coffee on his six-hectare farm for over two decades, managing four separate plots. As a member of our cooperative, he sells coffee parchment to us while also working with other buyers to diversify his income. Despite challenges like pests and weather, Vixay continues to adapt and invest in his farm, with support from his family and the cooperative.</p>
+          </div>
+        </div>
+      </section>
+      <section style="position:relative;height:min(92vh,860px);overflow:hidden;background:#15120f">
+        <img src="images/coffee-pack.webp" alt="Bags on the shelf" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:focr-glide 35s ease-in-out infinite alternate">
+        <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,11,9,.3),rgba(14,11,9,.85))"></div>
+        <div style="position:absolute;inset:auto 0 0 0;padding:0 clamp(20px,5vw,56px) clamp(44px,7vw,84px)">
+          <div style="max-width:1240px;margin:0 auto;color:#f5ead8">
+            <h2 style="margin:0 0 14px;max-width:22ch;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(49px,7.8vw,112px);line-height:1;letter-spacing:-.02em">Roasted Monday, on your shelf by Wednesday</h2>
+            <p style="margin:0;max-width:48ch;font-size:21px;color:rgba(245,234,216,.85)">Free local delivery over $60. Whole bean by default, ground to your brewer on request.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{ isLocations }}">
+    <div>
+      <section style="position:relative;height:min(78vh,660px);overflow:hidden;background:#15120f">
+        <img src="images/bar-c.webp" alt="The coffee bar" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:focr-glide 27s ease-in-out infinite alternate">
+        <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,11,9,.5),rgba(14,11,9,.3) 45%,rgba(14,11,9,.92))"></div>
+        <div style="position:absolute;inset:auto 0 0 0;padding:0 clamp(20px,5vw,56px) clamp(36px,5vw,64px)">
+          <div style="max-width:1240px;margin:0 auto;color:#f5ead8">
+            <nav style="display:flex;gap:10px;align-items:center;font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;margin-bottom:20px">
+              <a href="#home" style="color:rgba(245,234,216,.7)" style-hover="color:#f5ead8">Home</a><span style="color:rgba(245,234,216,.45)">→</span><span>Locations</span>
+            </nav>
+            <p style="margin:0 0 14px;font-size:13px;font-weight:600;letter-spacing:.36em;text-transform:uppercase;color:rgba(245,234,216,.65)">Singapore time now, {{ sgTime }}</p>
+            <h1 style="margin:0 0 16px;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(60px,10.4vw,140px);line-height:.94;letter-spacing:-.02em">Locations</h1>
+            <p style="margin:0;max-width:52ch;font-size:21px;color:rgba(245,234,216,.86)">Three rooms across the island, each with its own hours and its own reason to sit down.</p>
+          </div>
+        </div>
+      </section>
+      <section style="max-width:1240px;margin:0 auto;padding:clamp(48px,6vw,88px) clamp(20px,5vw,56px) 100px">
+        <div style="display:flex;flex-direction:column;gap:clamp(40px,6vw,72px)">
+          <sc-for list="{{ locations }}" as="loc" hint-placeholder-count="3">
+            <article data-sidebyside="" style="background: #fffaf1; border-radius: 28px; overflow: hidden; display: grid; grid-template-columns: .9fr 1.1fr; margin-top: 30px; margin-bottom: 30px">
+              <div style="position:relative;min-height:340px;background:#efe0c8;overflow:hidden">
+                <img src="{{ loc.photo }}" alt="{{ loc.name }}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:focr-glide 30s ease-in-out infinite alternate">
+              </div>
+              <div style="padding:clamp(24px,3vw,38px);display:flex;flex-direction:column;gap:14px;justify-content:center">
+                <div style="display:flex;align-items:center;gap:8px">
+                  <span style="width:8px;height:8px;border-radius:999px;background:{{ loc.dot }}"></span>
+                  <span style="font-size:14px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:rgba(32,30,29,.8)">{{ loc.status }}</span>
+                </div>
+                <h2 style="margin:0;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(30px,3.2vw,40px);line-height:1.05">{{ loc.name }}</h2>
+                <p style="margin:0;color:rgba(32,30,29,.88);font-size:19px">{{ loc.address }}</p>
+                <p style="margin:0;font-weight:600;font-size:19px">{{ loc.hours }}</p>
+                <p style="margin:0;font-size:18px;color:rgba(32,30,29,.8)">{{ loc.serves }}</p>
+                <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:6px">
+                  <a href="{{ loc.map }}" target="_blank" rel="noopener" style="border:1px solid rgba(32,30,29,.2);border-radius:999px;padding:13px 22px;font-weight:600;color:#201e1d;transition:.18s cubic-bezier(.2,.7,.2,1)" style-hover="border-color:#c67139;color:#8f4d21">Directions</a>
+                  <sc-if value="{{ loc.bookable }}"><a href="#reservations" style="background:#c67139;color:#f5ead8;border-radius:999px;padding:13px 22px;font-weight:600;transition:.18s cubic-bezier(.2,.7,.2,1)" style-hover="background:#a95a28;color:#f5ead8">Reserve</a></sc-if>
+                </div>
+              </div>
+            </article>
+          </sc-for>
+        </div>
+      </section>
+      <section style="position:relative;height:min(92vh,860px);overflow:hidden;background:#15120f">
+        <img src="images/dining-1-c.webp" alt="Room at Heritage" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:focr-glide 35s ease-in-out infinite alternate">
+        <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,11,9,.3),rgba(14,11,9,.85))"></div>
+        <div style="position:absolute;inset:auto 0 0 0;padding:0 clamp(20px,5vw,56px) clamp(44px,7vw,84px)">
+          <div style="max-width:1240px;margin:0 auto;color:#f5ead8">
+            <h2 style="margin:0 0 14px;max-width:22ch;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(49px,7.8vw,112px);line-height:1;letter-spacing:-.02em">Come for the coffee, stay for the room</h2>
+            <p style="margin:0;max-width:48ch;font-size:21px;color:rgba(245,234,216,.85)">Dogs welcome at the outdoor tables on Upper East Coast. Laptops fine before noon.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{ isRes }}">
+    <div>
+      <section style="position:relative;height:min(78vh,660px);overflow:hidden;background:#15120f">
+        <img src="images/dining-2-c.webp" alt="A set table" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:focr-glide 27s ease-in-out infinite alternate">
+        <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,11,9,.5),rgba(14,11,9,.3) 45%,rgba(14,11,9,.92))"></div>
+        <div style="position:absolute;inset:auto 0 0 0;padding:0 clamp(20px,5vw,56px) clamp(36px,5vw,64px)">
+          <div style="max-width:1240px;margin:0 auto;color:#f5ead8">
+            <nav style="display:flex;gap:10px;align-items:center;font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;margin-bottom:20px">
+              <a href="#home" style="color:rgba(245,234,216,.7)" style-hover="color:#f5ead8">Home</a><span style="color:rgba(245,234,216,.45)">→</span><span>Reservations</span>
+            </nav>
+            <p style="margin:0 0 14px;font-size:13px;font-weight:600;letter-spacing:.36em;text-transform:uppercase;color:rgba(245,234,216,.65)">Heritage &amp; Upper East Coast</p>
+            <h1 style="margin:0 0 16px;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(57px,9.9vw,135px);line-height:.94;letter-spacing:-.02em">Reserve a table</h1>
+            <p style="margin:0;max-width:52ch;font-size:21px;color:rgba(245,234,216,.86)">Four taps and you are down. We hold the table fifteen minutes past your time.</p>
+          </div>
+        </div>
+      </section>
+      <section style="max-width:1240px;margin:0 auto;padding:clamp(48px,6vw,88px) clamp(20px,5vw,56px) 100px">
+        <sc-if value="{{ resDone }}">
+          <div style="max-width:720px;margin:0 auto;text-align:center;padding:clamp(36px,5vw,64px) 0">
+            <p style="margin:0 0 18px;font-size:13px;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:#8f4d21">Request received</p>
+            <h2 style="margin:0 0 18px;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(34px,4.6vw,60px);line-height:1.05">{{ resSummary }}</h2>
+            <p style="margin:0 0 30px;font-size:21px;color:rgba(32,30,29,.86)">We will confirm by email within the hour. Tables are held for 15 minutes past the booking time.</p>
+            <button onClick="{{ resReset }}" style="background:transparent;border:1px solid rgba(32,30,29,.25);border-radius:999px;padding:14px 26px;font-weight:600;font-size:19px;cursor:pointer;transition:.18s cubic-bezier(.2,.7,.2,1)" style-hover="border-color:#c67139;color:#8f4d21">Make another booking</button>
+          </div>
+        </sc-if>
+        <sc-if value="{{ resForm }}">
+          <form onSubmit="{{ resSubmit }}" data-sidebyside="" style="display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(32px,5vw,72px);align-items:start">
+            <div style="display:flex;flex-direction:column;gap:clamp(26px,3vw,38px)">
+              <div>
+                <p style="margin:0 0 14px;font-size:13px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:#8f4d21">01 · Where</p>
+                <div style="display:flex;gap:10px;flex-wrap:wrap">
+                  <sc-for list="{{ resOutlets }}" as="o" hint-placeholder-count="2">
+                    <button type="button" onClick="{{ o.set }}" style="border-radius:999px;padding:13px 24px;font-weight:600;font-size:19px;cursor:pointer;transition:.18s cubic-bezier(.2,.7,.2,1);border:1px solid {{ o.border }};background:{{ o.bg }};color:{{ o.fg }}">{{ o.label }}</button>
+                  </sc-for>
+                </div>
+              </div>
+              <div>
+                <p style="margin:0 0 14px;font-size:13px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:#8f4d21">02 · How many</p>
+                <div style="display:flex;gap:8px;flex-wrap:wrap">
+                  <sc-for list="{{ resParty }}" as="o" hint-placeholder-count="6">
+                    <button type="button" onClick="{{ o.set }}" style="min-width:56px;border-radius:999px;padding:13px 18px;font-weight:600;font-size:19px;cursor:pointer;transition:.18s cubic-bezier(.2,.7,.2,1);border:1px solid {{ o.border }};background:{{ o.bg }};color:{{ o.fg }}">{{ o.label }}</button>
+                  </sc-for>
+                </div>
+              </div>
+              <div>
+                <p style="margin:0 0 14px;font-size:13px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:#8f4d21">03 · When</p>
+                <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:14px">
+                  <input type="date" required="{{ yes }}" value="{{ resDate }}" onChange="{{ setResDate }}" style="border:1px solid rgba(32,30,29,.22);border-radius:999px;padding:13px 20px;background:#fffaf1;font-weight:600;font-size:19px">
+                </div>
+                <div style="display:flex;gap:8px;flex-wrap:wrap">
+                  <sc-for list="{{ resTimes }}" as="o" hint-placeholder-count="6">
+                    <button type="button" onClick="{{ o.set }}" style="border-radius:999px;padding:12px 18px;font-weight:600;font-size:18px;cursor:pointer;transition:.18s cubic-bezier(.2,.7,.2,1);border:1px solid {{ o.border }};background:{{ o.bg }};color:{{ o.fg }}">{{ o.label }}</button>
+                  </sc-for>
+                </div>
+              </div>
+              <div>
+                <p style="margin:0 0 14px;font-size:13px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:#8f4d21">04 · Who</p>
+                <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px">
+                  <input type="text" required="{{ yes }}" placeholder="Name" autoComplete="name" style="border:1px solid rgba(32,30,29,.22);border-radius:999px;padding:14px 20px;background:#fffaf1;font-size:19px">
+                  <input type="email" required="{{ yes }}" placeholder="Email" autoComplete="email" style="border:1px solid rgba(32,30,29,.22);border-radius:999px;padding:14px 20px;background:#fffaf1;font-size:19px">
+                  <textarea rows="2" placeholder="High chair, dietary needs, a dog at an outdoor table" style="grid-column:1/-1;border:1px solid rgba(32,30,29,.22);border-radius:22px;padding:14px 20px;background:#fffaf1;font-size:19px;resize:vertical"></textarea>
+                </div>
+              </div>
+            </div>
+            <aside style="position:sticky;top:{{ stickyTop }};background:#fffaf1;border-radius:28px;overflow:hidden">
+              <div style="position:relative;aspect-ratio:4/3;background:#efe0c8;overflow:hidden">
+                <img src="images/holding-coffee.webp" alt="Coffee at the table" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:focr-glide 30s ease-in-out infinite alternate">
+              </div>
+              <div style="padding:clamp(22px,3vw,32px)">
+                <p style="margin:0 0 8px;font-size:13px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:#8f4d21">Your table</p>
+                <p style="margin:0 0 20px;font-family:'Instrument Serif',Georgia,serif;font-size:clamp(26px,2.8vw,34px);line-height:1.16">{{ resSummary }}</p>
+                <button type="submit" style="width:100%;background:#c67139;color:#f5ead8;border:0;border-radius:999px;padding:16px 24px;font-weight:600;font-size:19px;cursor:pointer;transition:.18s cubic-bezier(.2,.7,.2,1)" style-hover="background:#a95a28">Request booking</button>
+                <p style="margin:14px 0 0;font-size:16px;color:rgba(32,30,29,.72)">Walk-ins are always welcome at the bar. For parties of eight or more, write to <a href="mailto:hi@focr.sg">hi@focr.sg</a>.</p>
+              </div>
+            </aside>
+          </form>
+        </sc-if>
+      </section>
+      <section style="position:relative;height:min(92vh,860px);overflow:hidden;background:#15120f">
+        <img src="images/dining-1-c.webp" alt="Evening in the room" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:focr-glide 35s ease-in-out infinite alternate">
+        <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,11,9,.3),rgba(14,11,9,.85))"></div>
+        <div style="position:absolute;inset:auto 0 0 0;padding:0 clamp(20px,5vw,56px) clamp(44px,7vw,84px)">
+          <div style="max-width:1240px;margin:0 auto;color:#f5ead8">
+            <h2 style="margin:0 0 14px;max-width:22ch;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(49px,7.8vw,112px);line-height:1;letter-spacing:-.02em">Weekends fill by nine</h2>
+            <p style="margin:0;max-width:48ch;font-size:21px;color:rgba(245,234,216,.85)">Saturday and Sunday brunch books out early. Weekday mornings are quiet and unhurried.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{ isCareers }}">
+    <div>
+      <section style="position:relative;height:min(78vh,660px);overflow:hidden;background:#15120f">
+        <img src="images/food-c.webp" alt="Service in progress" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:focr-glide 27s ease-in-out infinite alternate">
+        <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,11,9,.5),rgba(14,11,9,.3) 45%,rgba(14,11,9,.92))"></div>
+        <div style="position:absolute;inset:auto 0 0 0;padding:0 clamp(20px,5vw,56px) clamp(36px,5vw,64px)">
+          <div style="max-width:1240px;margin:0 auto;color:#f5ead8">
+            <nav style="display:flex;gap:10px;align-items:center;font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;margin-bottom:20px">
+              <a href="#home" style="color:rgba(245,234,216,.7)" style-hover="color:#f5ead8">Home</a><span style="color:rgba(245,234,216,.45)">→</span><span>Careers</span>
+            </nav>
+            <p style="margin:0 0 14px;font-size:13px;font-weight:600;letter-spacing:.36em;text-transform:uppercase;color:rgba(245,234,216,.65)">One role open</p>
+            <h1 style="margin:0 0 16px;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(60px,10.4vw,140px);line-height:.94;letter-spacing:-.02em">Careers</h1>
+            <p style="margin:0;max-width:52ch;font-size:21px;color:rgba(245,234,216,.86)">We hire for attitude and train the craft.</p>
+          </div>
+        </div>
+      </section>
+      <section style="max-width:1240px;margin:0 auto;padding:clamp(48px,6vw,88px) clamp(20px,5vw,56px) 100px">
+        <div>
+          <p style="margin:0 0 32px;max-width:56ch;font-size:21px;color:rgba(32,30,29,.9)">Tell us which room you want to work in and we will take it from there. Write to <a href="mailto:hr@focr.sg">hr@focr.sg</a> with a short note about yourself, no formal cover letter needed.</p>
+          <article style="background:#fffaf1;border-radius:26px;overflow:hidden">
+            <div onClick="{{ toggleRole }}" role="button" tabIndex="{{ zero }}" aria-expanded="{{ roleOpen }}" style="cursor:pointer;display:flex;flex-wrap:wrap;gap:clamp(16px,2.2vw,26px);align-items:center;padding:18px;transition:background .18s cubic-bezier(.2,.7,.2,1)" style-hover="background:rgba(198,113,57,.07)">
+              <div style="position:relative;flex:0 0 auto;width:clamp(112px,13vw,156px);aspect-ratio:1;border-radius:18px;overflow:hidden;background:#efe0c8">
+                <img src="images/careers-foh.webp" alt="Front of house at the counter" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:focr-glide 30s ease-in-out infinite alternate">
+              </div>
+              <div style="flex:1 1 240px;min-width:0">
+                <p style="margin:0;font-family:'Instrument Serif',Georgia,serif;font-size:clamp(26px,2.8vw,34px);line-height:1.1">Front of House</p>
+                <p style="margin:6px 0 0;font-size:17px;color:rgba(32,30,29,.8)">Part-time and Full-time positions available.</p>
+              </div>
+              <span style="flex:0 0 auto;width:44px;height:44px;margin-right:8px;border-radius:999px;border:1px solid rgba(32,30,29,.2);display:grid;place-items:center;font-size:20px;transform:rotate({{ roleTurn }});transition:transform .22s cubic-bezier(.2,.7,.2,1)">+</span>
+            </div>
+            <div style="min-width:0">
+              <sc-if value="{{ roleOpen }}">
+                <div style="padding:0 clamp(22px,3vw,30px) clamp(22px,3vw,30px);animation:focr-in .3s cubic-bezier(.2,.7,.2,1) both">
+                  <div style="height:1px;background:rgba(32,30,29,.1);margin-bottom:22px"></div>
+                  <p style="margin:0 0 20px;font-size:19px;color:rgba(32,30,29,.9)">Our front of house crew represents the service and overall hospitality of the café. You should provide consistently excellent customer service and ensure are comfortable and satisfied throughout the visit. The position requires someone who is a team player, service orientated, and passionate about the industry.</p>
+                  <p style="margin:0 0 10px;font-size:14px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#8f4d21">Responsibilities</p>
+                  <ul style="margin:0 0 22px;padding-left:22px;font-size:19px;color:rgba(32,30,29,.9);display:flex;flex-direction:column;gap:7px">
+                    <li>Offer friendly and efficient service to customers</li>
+                    <li>Provide menu recommendations to customers when asked</li>
+                    <li>Process customer orders via Point-of-Sale (POS) system</li>
+                    <li>Ensure all items are prepared and served promptly</li>
+                    <li>Assist with setting and clearing table for various meal period</li>
+                    <li>Assist shift manager in planning and organizing special events</li>
+                    <li>Escalate customers' feedback to the shift manager</li>
+                    <li>Follow proper hygiene practices in accordance with food &amp; beverage safety and hygiene standards</li>
+                    <li>Any other duties assigned by the manager</li>
+                  </ul>
+                  <p style="margin:0 0 10px;font-size:14px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#8f4d21">Requirements</p>
+                  <ul style="margin:0 0 24px;padding-left:22px;font-size:19px;color:rgba(32,30,29,.9);display:flex;flex-direction:column;gap:7px">
+                    <li>At least 1-2 years of relevant experience in the F&amp;B or Retail industry</li>
+                    <li>Excellent communication and interpersonal skills</li>
+                    <li>Excellent team player and friendly individual</li>
+                    <li>High initiative and positive attitude</li>
+                    <li>Able to multi-task and work in a fast-paced environment</li>
+                    <li>Willing to work on weekends and public holidays</li>
+                    <li>5 days work week (for full-time positions)</li>
+                  </ul>
+                  <div style="height:1px;background:rgba(32,30,29,.1);margin:4px 0 24px"></div>
+                  <button onClick="{{ toggleApply }}" aria-expanded="{{ applyOpen }}" style="display:inline-flex;align-items:center;gap:12px;background:#c67139;color:#f5ead8;border:0;border-radius:999px;padding:15px 28px;font-weight:600;font-size:19px;cursor:pointer;transition:.18s cubic-bezier(.2,.7,.2,1)" style-hover="background:#a95a28">
+                    {{ applyLabel }}<span style="display:inline-block;font-size:15px;transform:rotate({{ applyTurn }});transition:transform .28s cubic-bezier(.2,.7,.2,1)">▾</span>
+                  </button>
+                  <div style="overflow:hidden;transition:max-height .42s cubic-bezier(.22,.72,.2,1),opacity .3s ease,transform .34s cubic-bezier(.22,.72,.2,1);{{ applyPanel }}">
+                    <sc-if value="{{ applyDone }}">
+                      <div style="background:#f5ead8;border-radius:22px;padding:clamp(22px,3vw,30px);margin-top:22px">
+                        <p style="margin:0 0 8px;font-size:13px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:#8f4d21">Application sent</p>
+                        <p style="margin:0 0 10px;font-family:'Instrument Serif',Georgia,serif;font-size:28px;line-height:1.15">We look forward to meeting you!</p>
+                        <p style="margin:0 0 22px;font-size:18px;color:rgba(32,30,29,.86)">We regret to inform only shortlisted candidates will be contacted.</p>
+                        <button onClick="{{ applyReset }}" style="background:transparent;border:1px solid rgba(32,30,29,.25);border-radius:999px;padding:13px 22px;font-weight:600;font-size:18px;cursor:pointer;transition:.18s cubic-bezier(.2,.7,.2,1)" style-hover="border-color:#c67139;color:#8f4d21">Send another</button>
+                      </div>
+                    </sc-if>
+                    <sc-if value="{{ applyForm }}">
+                      <form onSubmit="{{ applySubmit }}" style="background:#f5ead8;border-radius:22px;padding:clamp(22px,3vw,30px);margin-top:22px">
+                        <p style="margin:0 0 8px;font-family:'Instrument Serif',Georgia,serif;font-size:clamp(24px,2.6vw,32px);line-height:1.15">We look forward to meeting you!</p>
+                        <p style="margin:0 0 20px;font-size:17px;color:rgba(32,30,29,.82)">Alternatively, you can email your resume to <a href="mailto:hr@focr.sg?subject=Front of House application">hr@focr.sg</a>. We regret to inform only shortlisted candidates will be contacted. All fields are required.</p>
+                        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px">
+                          <label style="display:flex;flex-direction:column;gap:7px;font-size:15px;font-weight:600">Full name
+                            <input type="text" required="{{ yes }}" autoComplete="name" style="border:1px solid rgba(32,30,29,.22);border-radius:999px;padding:13px 18px;background:#fffaf1;font-weight:400;font-size:18px">
+                          </label>
+                          <label style="display:flex;flex-direction:column;gap:7px;font-size:15px;font-weight:600">Email
+                            <input type="email" required="{{ yes }}" autoComplete="email" style="border:1px solid rgba(32,30,29,.22);border-radius:999px;padding:13px 18px;background:#fffaf1;font-weight:400;font-size:18px">
+                          </label>
+                          <label style="display:flex;flex-direction:column;gap:7px;font-size:15px;font-weight:600">Phone number
+                            <input type="tel" required="{{ yes }}" autoComplete="tel" style="border:1px solid rgba(32,30,29,.22);border-radius:999px;padding:13px 18px;background:#fffaf1;font-weight:400;font-size:18px">
+                          </label>
+                          <label style="display:flex;flex-direction:column;gap:7px;font-size:15px;font-weight:600">Position
+                            <select required="{{ yes }}" style="border:1px solid rgba(32,30,29,.22);border-radius:999px;padding:13px 18px;background:#fffaf1;font-weight:400;font-size:18px">
+                              <option>Front of House</option>
+                            </select>
+                          </label>
+                          <label style="display:flex;flex-direction:column;gap:7px;font-size:15px;font-weight:600">Type of contract
+                            <select required="{{ yes }}" style="border:1px solid rgba(32,30,29,.22);border-radius:999px;padding:13px 18px;background:#fffaf1;font-weight:400;font-size:18px">
+                              <option>Full-time</option>
+                              <option>Part-time</option>
+                            </select>
+                          </label>
+                          <label style="display:flex;flex-direction:column;gap:7px;font-size:15px;font-weight:600">Nationality
+                            <input type="text" required="{{ yes }}" autoComplete="country-name" style="border:1px solid rgba(32,30,29,.22);border-radius:999px;padding:13px 18px;background:#fffaf1;font-weight:400;font-size:18px">
+                          </label>
+                          <label style="display:flex;flex-direction:column;gap:7px;font-size:15px;font-weight:600;grid-column:1/-1">Resume upload
+                            <input type="file" required="{{ yes }}" accept=".pdf,.doc,.docx" style="border:1px solid rgba(32,30,29,.22);border-radius:20px;padding:13px 18px;background:#fffaf1;font-weight:400;font-size:17px">
+                          </label>
+                        </div>
+                        <button type="submit" style="margin-top:20px;background:#c67139;color:#f5ead8;border:0;border-radius:999px;padding:15px 30px;font-weight:600;font-size:19px;cursor:pointer;transition:.18s cubic-bezier(.2,.7,.2,1)" style-hover="background:#a95a28">Submit</button>
+                      </form>
+                    </sc-if>
+                  </div>
+                </div>
+              </sc-if>
+            </div>
+          </article>
+          <p style="margin:24px 0 0;font-size:18px;color:rgba(32,30,29,.78)">Nothing here for you right now? Send an introduction anyway. Kitchen and roastery openings come up through the year.</p>
+        </div>
+      </section>
+      <section style="position:relative;height:min(92vh,860px);overflow:hidden;background:#15120f">
+        <img src="images/dining-2-c.webp" alt="The room before service" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:focr-glide 35s ease-in-out infinite alternate">
+        <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,11,9,.3),rgba(14,11,9,.85))"></div>
+        <div style="position:absolute;inset:auto 0 0 0;padding:0 clamp(20px,5vw,56px) clamp(44px,7vw,84px)">
+          <div style="max-width:1240px;margin:0 auto;color:#f5ead8">
+            <h2 style="margin:0 0 14px;max-width:22ch;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(49px,7.8vw,112px);line-height:1;letter-spacing:-.02em">Small team, long shifts, good coffee</h2>
+            <p style="margin:0;max-width:48ch;font-size:21px;color:rgba(245,234,216,.85)">Most of the floor started with no hospitality experience at all.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </sc-if>
+
+  </main>
+
+  <footer style="background:#201e1d;color:rgba(245,234,216,.88);padding:clamp(48px,7vw,88px) 0 120px">
+    <div style="max-width:1240px;margin:0 auto;padding:0 clamp(20px,5vw,56px);display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:36px">
+      <div>
+        <img src="images/logo-stamp.webp" alt="Five Oars Coffee Roasters" style="display:block;width:170px;height:auto;margin:0 0 16px">
+        <p style="margin:0;font-size:15px">Coffee roasters, kitchen and roastery in Singapore.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <p style="margin:0 0 2px;font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:rgba(245,234,216,.45)">Visit</p>
+        <a href="#menu" style="color:rgba(245,234,216,.88);font-size:15px" style-hover="color:#c67139">Menu</a>
+        <a href="#shop" style="color:rgba(245,234,216,.88);font-size:15px" style-hover="color:#c67139">Shop coffee beans</a>
+        <a href="#locations" style="color:rgba(245,234,216,.88);font-size:15px" style-hover="color:#c67139">Locations &amp; hours</a>
+        <a href="#reservations" style="color:rgba(245,234,216,.88);font-size:15px" style-hover="color:#c67139">Reservations</a>
+        <a href="#careers" style="color:rgba(245,234,216,.88);font-size:15px" style-hover="color:#c67139">Careers</a>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <p style="margin:0 0 2px;font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:rgba(245,234,216,.45)">Email us</p>
+        <a href="mailto:hi@focr.sg" style="color:rgba(245,234,216,.88);font-size:15px" style-hover="color:#c67139">hi@focr.sg</a>
+        <p style="margin:10px 0 2px;font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:rgba(245,234,216,.45)">Follow</p>
+        <a href="https://www.instagram.com/focr.sg/?hl=en" target="_blank" rel="noopener" style="color:rgba(245,234,216,.88);font-size:15px" style-hover="color:#c67139">Instagram</a>
+        <a href="https://www.facebook.com/focr.sg" target="_blank" rel="noopener" style="color:rgba(245,234,216,.88);font-size:15px" style-hover="color:#c67139">Facebook</a>
+      </div>
+      <p style="margin:0;font-size:14px;color:rgba(245,234,216,.5)">Concept redesign. Not affiliated with the original business.</p>
+    </div>
+  </footer>
+
+  <div data-mobilebar="" style="display:none;position:fixed;left:12px;right:12px;bottom:12px;z-index:70;gap:10px;background:rgba(32,30,29,.95);backdrop-filter:blur(12px);border-radius:999px;padding:10px">
+    <a href="#reservations" style="flex:1 1 0;text-align:center;background:#c67139;color:#f5ead8;border-radius:999px;padding:14px 10px;font-weight:600" style-hover="background:#a95a28;color:#f5ead8">Reserve</a>
+    <a href="#shop" style="flex:1 1 0;text-align:center;border:1px solid rgba(245,234,216,.35);color:#f5ead8;border-radius:999px;padding:14px 10px;font-weight:600" style-hover="border-color:#c67139;color:#f5ead8">Shop beans</a>
+  </div>
+
+  <sc-if value="{{ beanOpen }}">
+    <div onClick="{{ closeBean }}" style="position:fixed;inset:0;z-index:90;background:rgba(32,30,29,.8);display:grid;place-items:center;padding:20px;overflow:auto;animation:focr-in .22s cubic-bezier(.2,.7,.2,1) both">
+      <div style="display:flex;align-items:center;gap:clamp(8px,2vw,20px);max-width:1080px;width:100%">
+        <button onClick="{{ beanPrev }}" aria-label="Previous product" style="flex:0 0 auto;width:52px;height:52px;border-radius:999px;border:1px solid rgba(245,234,216,.35);background:rgba(20,17,14,.5);color:#f5ead8;cursor:pointer;font-size:20px;transition:.18s cubic-bezier(.2,.7,.2,1)" style-hover="background:#c67139;border-color:#c67139">←</button>
+        <div style="flex:1 1 auto;min-width:0;background:#fffaf1;border-radius:28px;overflow:auto;max-height:calc(100dvh - 40px);box-shadow:0 24px 60px rgba(32,30,29,.4);display:grid;grid-template-columns:1fr 1fr" data-sidebyside="">
+          <div style="position:relative;min-height:220px;background:#e8e3dc">
+            <img src="{{ bean.img }}" alt="{{ bean.name }}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+          </div>
+          <div style="padding:clamp(24px,3vw,38px);display:flex;flex-direction:column;gap:12px">
+            <p style="margin:0;font-size:13px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:#8f4d21">{{ bean.kicker }}</p>
+            <h2 style="margin:0;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(30px,3.4vw,42px);line-height:1.05">{{ bean.name }}</h2>
+            <p style="margin:0;font-size:17px;font-weight:600;color:rgba(32,30,29,.75)">{{ bean.origin }}</p>
+            <p style="margin:0;font-size:19px;color:rgba(32,30,29,.9)">{{ bean.long }}</p>
+            <dl style="margin:6px 0 0;display:grid;grid-template-columns:auto 1fr;gap:9px 20px;font-size:17px">
+              <dt style="color:rgba(32,30,29,.7)">Tasting notes</dt><dd style="margin:0;font-weight:600">{{ bean.notes }}</dd>
+              <dt style="color:rgba(32,30,29,.7)">Varietal</dt><dd style="margin:0;font-weight:600">{{ bean.varietal }}</dd>
+              <dt style="color:rgba(32,30,29,.7)">Process</dt><dd style="margin:0;font-weight:600">{{ bean.process }}</dd>
+              <dt style="color:rgba(32,30,29,.7)">Brew</dt><dd style="margin:0;font-weight:600">{{ bean.brew }}</dd>
+              <dt style="color:rgba(32,30,29,.7)">Weight</dt><dd style="margin:0;font-weight:600">{{ bean.weight }}</dd>
+            </dl>
+            <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:12px">
+              <button onClick="{{ addBean }}" style="flex:1 1 180px;background:#e5b98d;color:#4a2711;border:0;border-radius:999px;padding:15px 22px;font-weight:600;font-size:18px;cursor:pointer;transition:.18s cubic-bezier(.2,.7,.2,1)" style-hover="background:#d8a570">Add to cart · {{ bean.price }}</button>
+              <button onClick="{{ closeBean }}" style="background:transparent;border:1px solid rgba(32,30,29,.2);border-radius:999px;padding:15px 22px;font-weight:600;font-size:18px;cursor:pointer;transition:.18s cubic-bezier(.2,.7,.2,1)" style-hover="border-color:#c67139;color:#8f4d21">Close</button>
+            </div>
+          </div>
+        </div>
+        <button onClick="{{ beanNext }}" aria-label="Next product" style="flex:0 0 auto;width:52px;height:52px;border-radius:999px;border:1px solid rgba(245,234,216,.35);background:rgba(20,17,14,.5);color:#f5ead8;cursor:pointer;font-size:20px;transition:.18s cubic-bezier(.2,.7,.2,1)" style-hover="background:#c67139;border-color:#c67139">→</button>
+      </div>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{ cartOpen }}">
+    <div style="position:fixed;inset:0;z-index:95;display:flex;justify-content:flex-end">
+      <div onClick="{{ closeCart }}" style="position:absolute;inset:0;background:rgba(32,30,29,.72)"></div>
+      <aside style="position:relative;background:#f5ead8;width:min(440px,100%);height:100%;display:flex;flex-direction:column;box-shadow:-20px 0 60px rgba(32,30,29,.3)">
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:22px;border-bottom:1px solid rgba(32,30,29,.12)">
+          <h2 style="margin:0;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:28px">Your cart</h2>
+          <button onClick="{{ closeCart }}" aria-label="Close" style="background:transparent;border:1px solid rgba(32,30,29,.2);border-radius:999px;width:40px;height:40px;cursor:pointer;transition:.18s cubic-bezier(.2,.7,.2,1)" style-hover="border-color:#c67139;color:#8f4d21">✕</button>
+        </div>
+        <div style="flex:1 1 auto;overflow-y:auto;padding:22px;display:flex;flex-direction:column;gap:18px">
+          <sc-if value="{{ cartEmpty }}"><p style="margin:0;color:rgba(32,30,29,.8)">Nothing in the cart yet. <a href="#shop" onClick="{{ closeCart }}">Shop beans →</a></p></sc-if>
+          <sc-for list="{{ cartLines }}" as="l" hint-placeholder-count="2">
+            <div style="display:flex;gap:14px;align-items:center">
+              <div style="width:68px;height:68px;border-radius:16px;background:#efe0c8;flex:0 0 auto;overflow:hidden;position:relative">
+                <img src="{{ l.img }}" alt="{{ l.name }}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+              </div>
+              <div style="flex:1 1 auto;min-width:0">
+                <p style="margin:0;font-weight:600;font-size:18px">{{ l.name }}</p>
+                <p style="margin:2px 0 0;font-size:17px;color:rgba(32,30,29,.8)">{{ l.price }}</p>
+              </div>
+              <div style="display:flex;align-items:center;gap:6px;flex:0 0 auto">
+                <button onClick="{{ l.dec }}" aria-label="Decrease" style="width:34px;height:34px;border-radius:999px;border:1px solid rgba(32,30,29,.2);background:transparent;cursor:pointer;transition:.18s cubic-bezier(.2,.7,.2,1)" style-hover="border-color:#c67139;color:#8f4d21">−</button>
+                <span style="min-width:24px;text-align:center;font-weight:600">{{ l.qty }}</span>
+                <button onClick="{{ l.inc }}" aria-label="Increase" style="width:34px;height:34px;border-radius:999px;border:1px solid rgba(32,30,29,.2);background:transparent;cursor:pointer;transition:.18s cubic-bezier(.2,.7,.2,1)" style-hover="border-color:#c67139;color:#8f4d21">+</button>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+        <div style="padding:22px;border-top:1px solid rgba(32,30,29,.12)">
+          <sc-if value="{{ checkoutIdle }}">
+            <div>
+              <div style="display:flex;justify-content:space-between;margin-bottom:6px"><span>Subtotal</span><span style="font-weight:600">{{ subtotal }}</span></div>
+              <div style="display:flex;justify-content:space-between;margin-bottom:16px;font-size:17px;color:rgba(32,30,29,.8)"><span>Delivery</span><span>{{ delivery }}</span></div>
+              <button onClick="{{ startCheckout }}" style="width:100%;background:#c67139;color:#f5ead8;border:0;border-radius:999px;padding:15px;font-weight:600;font-size:19px;cursor:pointer;transition:.18s cubic-bezier(.2,.7,.2,1)" style-hover="background:#a95a28">Checkout · {{ total }}</button>
+            </div>
+          </sc-if>
+          <sc-if value="{{ checkoutForm }}">
+            <form onSubmit="{{ placeOrder }}" style="display:flex;flex-direction:column;gap:12px">
+              <input type="text" required="{{ yes }}" placeholder="Name" style="border:1px solid rgba(32,30,29,.2);border-radius:999px;padding:13px 18px;background:#fffaf1">
+              <input type="email" required="{{ yes }}" placeholder="Email" style="border:1px solid rgba(32,30,29,.2);border-radius:999px;padding:13px 18px;background:#fffaf1">
+              <input type="text" required="{{ yes }}" placeholder="Delivery address" style="border:1px solid rgba(32,30,29,.2);border-radius:999px;padding:13px 18px;background:#fffaf1">
+              <input type="text" required="{{ yes }}" placeholder="Card number" inputMode="numeric" style="border:1px solid rgba(32,30,29,.2);border-radius:999px;padding:13px 18px;background:#fffaf1">
+              <button type="submit" style="background:#c67139;color:#f5ead8;border:0;border-radius:999px;padding:15px;font-weight:600;font-size:19px;cursor:pointer;transition:.18s cubic-bezier(.2,.7,.2,1)" style-hover="background:#a95a28">Pay {{ total }}</button>
+              <p style="margin:0;text-align:center;font-size:15px;color:rgba(32,30,29,.72)">Demo checkout, no payment is taken.</p>
+            </form>
+          </sc-if>
+          <sc-if value="{{ checkoutDone }}">
+            <div style="text-align:center">
+              <p style="margin:0 0 8px;font-family:'Instrument Serif',Georgia,serif;font-size:26px">Order placed</p>
+              <p style="margin:0 0 16px;font-size:17px;color:rgba(32,30,29,.86)">Roasted Monday, shipped Tuesday. A confirmation is on its way.</p>
+              <button onClick="{{ closeCart }}" style="width:100%;background:transparent;border:1px solid rgba(32,30,29,.25);border-radius:999px;padding:14px;font-weight:600;cursor:pointer;transition:.18s cubic-bezier(.2,.7,.2,1)" style-hover="border-color:#c67139;color:#8f4d21">Done</button>
+            </div>
+          </sc-if>
+        </div>
+      </aside>
+    </div>
+  </sc-if>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1440,&quot;height&quot;:900},&quot;heroVideoSrc&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;media/espresso-pour.mp4&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Hero&quot;},&quot;showOpenNow&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;}}">
+const IG = 'https://www.instagram.com/focr.sg/?hl=en';
+
+const RES = p => (typeof window !== 'undefined' && window.__resources && window.__resources[p]) || p;
+let ASSETS_RESOLVED = false;
+function resolveAssets() {
+  if (ASSETS_RESOLVED) return;
+  ASSETS_RESOLVED = true;
+  PRODUCTS.forEach(p => { p.img = RES(p.img); });
+  DISH_IMGS.forEach((v, i) => { DISH_IMGS[i] = RES(v); });
+  SOCIAL.forEach(page => page.forEach(item => { item.src = RES(item.src); }));
+}
+
+const PRODUCTS = [
+  { id: 'amederaro', name: 'Amederaro Konga', kicker: 'Single origin', origin: 'Yirgacheffe, Ethiopia', img: 'images/bean-amederaro.webp', price: 28, weight: '250g whole bean', varietal: 'JARC 74', process: 'Natural', brew: 'V60, Aeropress, batch brew', notes: 'Blueberry, peach, currant', flavours: ['Berry & fruit'], long: 'A natural from Konga, dried slowly on raised beds until the fruit is deep and jammy. Blueberry first, then peach, closing on currant.' },
+  { id: 'urabeast', name: 'Urabeast', kicker: 'Single origin', origin: 'Guji, Ethiopia', img: 'images/bean-urabeast.webp', price: 28, weight: '250g whole bean', varietal: '74110', process: 'Washed', brew: 'V60, Kalita, iced filter', notes: 'Jasmine, bergamot, grapefruit', flavours: ['Floral & tea'], long: 'The most aromatic lot on the shelf. Washed 74110 from Guji, floral on the nose and citric through the finish. Brew it light and drink it cool.' },
+  { id: 'kagumo', name: 'Kagumo NH', kicker: 'Single origin', origin: 'Nyeri County, Kenya', img: 'images/bean-kagumo.webp', price: 30, weight: '250g whole bean', varietal: 'SL28, SL34', process: 'Natural', brew: 'V60, espresso for the brave', notes: 'Macerated berry, hibiscus, nectar', flavours: ['Berry & fruit', 'Floral & tea'], long: 'A natural-processed Kenyan, three weeks on raised beds at the Kagumo station. Loud, sweet and unmistakably Nyeri.' },
+  { id: 'nkira', name: 'Nkira', kicker: 'Single origin', origin: 'Rutsiro, Rwanda', img: 'images/bean-nkira.webp', price: 27, weight: '250g whole bean', varietal: 'Bourbon', process: 'Washed', brew: 'Filter, plunger, milk drinks', notes: 'Poached apple, fig, toffee', flavours: ['Sweet & caramel'], long: 'Washed Bourbon from the hills above Lake Kivu. Rounder and sweeter than its Kenyan neighbours, with a toffee finish that suits milk.' },
+  { id: 'sansebastian', name: 'San Sebastian', kicker: 'Single origin', origin: 'Inza Cauca, Colombia', img: 'images/bean-sansebastian.webp', price: 27, weight: '250g whole bean', varietal: 'Caturra, Castillo', process: 'Washed', brew: 'Espresso, filter', notes: 'Plum, raisin, black tea', flavours: ['Berry & fruit', 'Floral & tea'], long: 'Dark-fruited and tea-like, the sort of Colombian that works as a single-origin espresso without any fuss.' },
+  { id: 'elmorito', name: 'El Morito', kicker: 'Single origin', origin: 'Cajamarca, Peru', img: 'images/bean-elmorito.webp', price: 26, weight: '250g whole bean', varietal: 'Marshell', process: 'Washed', brew: 'Filter, batch brew', notes: 'Yellow plum, orange, cane sugar', flavours: ['Berry & fruit', 'Sweet & caramel'], long: 'Bright and clean from northern Peru. Stone fruit up front, orange acidity through the middle, cane sugar sweetness to finish.' },
+  { id: 'cajarmaca', name: 'Cajarmaca', kicker: 'Single origin', origin: 'Cajarmaca, Peru', img: 'images/bean-cajarmaca.webp', price: 26, weight: '250g whole bean', varietal: 'Mixed lots', process: 'Washed', brew: 'Espresso, plunger', notes: 'Dried apricot, almond, plum', flavours: ['Chocolate & nut', 'Sweet & caramel'], long: 'A community lot blended from smallholder deliveries. Nutty and dried-fruited, forgiving on any brewer you own.' },
+  { id: 'borbollon', name: 'El Borbollon', kicker: 'Single origin', origin: 'Santa Ana, El Salvador', img: 'images/bean-borbollon.webp', price: 27, weight: '250g whole bean', varietal: 'Bourbon', process: 'Washed', brew: 'Espresso, filter, cold brew', notes: 'Yellow plum, almond, brown sugar', flavours: ['Chocolate & nut', 'Sweet & caramel'], long: 'Classic washed Bourbon grown on volcanic soil in Santa Ana. Almond and brown sugar, the easiest cup here to drink all day.' },
+  { id: 'waliki', name: 'Waliki', kicker: 'Single origin', origin: 'La Paz, Bolivia', img: 'images/bean-waliki.webp', price: 29, weight: '250g whole bean', varietal: 'Java', process: 'Washed', brew: 'V60, Aeropress', notes: 'Honeysuckle, apricot, apple', flavours: ['Floral & tea', 'Berry & fruit'], long: 'Bolivian coffee is rare and this Java lot explains why it is worth chasing. Delicate, floral, apple-crisp.' },
+];
+
+const T = {
+  veg: { label: 'Veg', emoji: '🌿', bg: 'rgba(122,138,94,.16)', fg: '#4f5c38' },
+  beef: { label: 'Beef', emoji: '🐄', bg: 'rgba(150,63,45,.14)', fg: '#7d3020' },
+  pork: { label: 'Pork', emoji: '🥓', bg: 'rgba(198,113,57,.16)', fg: '#8f4d21' },
+  lamb: { label: 'Lamb', emoji: '🐑', bg: 'rgba(120,90,70,.16)', fg: '#6b4634' },
+  chicken: { label: 'Chicken', emoji: '🐓', bg: 'rgba(196,150,50,.16)', fg: '#7d5c11' },
+  fish: { label: 'Fish', emoji: '🐟', bg: 'rgba(70,110,130,.16)', fg: '#2f5665' },
+  shellfish: { label: 'Shellfish', emoji: '🦐', bg: 'rgba(190,95,80,.14)', fg: '#8a3a2c' },
+  egg: { label: 'Egg', emoji: '🥚', bg: 'rgba(200,170,90,.18)', fg: '#7a5d13' },
+  dairy: { label: 'Dairy', emoji: '🧀', bg: 'rgba(190,160,110,.18)', fg: '#71531f' },
+  oat: { label: 'Oat milk', emoji: '🌾', bg: 'rgba(122,138,94,.14)', fg: '#4f5c38' }
+};
+
+const DISH_IMGS = ['images/menu-food.webp', 'images/food-c.webp', 'images/sourdough.webp', 'images/holding-coffee.webp', 'images/cup-c.webp', 'images/dining-1-c.webp'];
+
+const MENU = [
+  { name: 'Avocado Toast', desc: 'Poached eggs, cherry tomatoes, ricotta, housemade sourdough', price: '$19', cat: 'All-day', veg: true, tags: ['veg', 'egg', 'dairy'], story: 'The sourdough is cut from a loaf baked at five that morning, which is the whole argument for eating this before noon.' },
+  { name: 'Burrata Poached Eggs', desc: 'Sun-dried tomato, burrata, basil, sourdough', price: '$22', cat: 'All-day', veg: true, tags: ['veg', 'egg', 'dairy'], story: 'A whole ball of burrata, torn at the table so the cream runs into the yolk.' },
+  { name: 'Sriracha Chicken Benedict', desc: 'Chicken thigh, sriracha hollandaise, apple fennel salad', price: '$22', cat: 'All-day', tags: ['chicken', 'egg', 'dairy'], story: 'Our answer to a Melbourne benedict, with enough chilli in the hollandaise to wake a Sunday up.' },
+  { name: 'Crab Scramble', desc: 'Scrambled eggs, crab meat, avocado, ebiko, sourdough', price: '$24', cat: 'All-day', tags: ['shellfish', 'egg'], story: 'Eggs stirred low and slow until they barely hold, folded through sweet crab picked that morning.' },
+  { name: 'Acai Bowl', desc: 'Granola, seasonal fruit, honey', price: '$18', cat: 'All-day', veg: true, tags: ['veg'], story: 'Topped with the same granola we jar for the shelf, toasted dark for the bitterness it brings.' },
+  { name: 'Buckwheat Pancake', desc: 'Whipped mascarpone, berries, maple', price: '$16', cat: 'All-day', veg: true, tags: ['veg', 'dairy', 'egg'], story: 'Buckwheat gives it a nuttiness that plain flour never manages, an old Breton trick.' },
+  { name: 'Salted Caramel Banana Waffle', desc: 'Sourdough batter, torched banana, sugared hazelnuts', price: '$18', cat: 'All-day', veg: true, tags: ['veg', 'dairy', 'egg'], story: 'The batter is leavened with sourdough starter overnight, so it tastes faintly of the bakery bench.' },
+  { name: 'Iberian Pork Burger', desc: 'Housemade bun, pickles, fries', price: '$26', cat: 'All-day', tags: ['pork', 'dairy'], story: 'Iberico shoulder, ground coarse in house, cooked to blush pink the way the Spanish insist.' },
+  { name: 'Wagyu Cheeseburger', desc: 'Aged cheddar, house sauce, fries', price: '$28', cat: 'All-day', tags: ['beef', 'dairy'], story: 'Wagyu trim from the sirloin we grill at night, so nothing on the bench goes to waste.' },
+  { name: 'White Wine Vongole', desc: 'Housemade linguine, clams, garlic, chilli', price: '$22', cat: 'Night', tags: ['shellfish'], story: 'Linguine rolled the same afternoon, finished in clam liquor until the sauce clings.' },
+  { name: 'Grilled Octopus Leg', desc: 'Romesco, charred lemon', price: '$24', cat: 'Night', tags: ['fish'], story: 'Braised for three hours, then hit hard on the grill, the way it is done along the Galician coast.' },
+  { name: 'Pork Ribs', desc: 'Slow-cooked, sticky glaze, slaw', price: '$28', cat: 'Night', tags: ['pork'], story: 'Twelve hours low, glazed to lacquer in the last ten minutes.' },
+  { name: 'Lamb Ribs', desc: 'Cumin salt, mint yoghurt', price: '$38', cat: 'Night', tags: ['lamb', 'dairy'], story: 'Cumin and salt, borrowed from the lamb skewers of northwest China, cooled by mint yoghurt.' },
+  { name: 'Black Angus Sirloin', desc: 'Confit garlic butter, fries', price: '$32', cat: 'Night', tags: ['beef', 'dairy'], story: 'Rested twice as long as it is grilled, which is why the first cut runs clear.' },
+  { name: 'Seafood Paella', desc: 'Bomba rice, prawns, clams, squid, for two', price: '$45', cat: 'Night', tags: ['shellfish', 'fish'], story: 'Cooked in one pan without stirring, so the rice at the base caramelises into socarrat.' },
+  { name: 'Flat White', desc: 'House espresso, rotated fortnightly', price: '$6', cat: 'Coffee', veg: true, tags: ['veg', 'dairy'], story: 'Six ounces, two ristretto shots, milk stretched flat. The drink Melbourne exported and we kept.' },
+  { name: 'Long Black', desc: 'Double shot, hot water', price: '$5.50', cat: 'Coffee', veg: true, tags: ['veg'], story: 'Water first, then the shot, so the crema survives the pour.' },
+  { name: 'Latte', desc: 'Oat or barista milk', price: '$6', cat: 'Coffee', veg: true, tags: ['veg', 'oat'], story: 'Oat milk is no longer the compromise, it sweetens the fruit in the darker lots.' },
+  { name: 'Filter, Single Origin', desc: 'V60, rotating lot, ask the bar', price: '$7', cat: 'Coffee', veg: true, tags: ['veg'], story: 'Whatever landed most recently, brewed by hand and worth asking about.' },
+  { name: 'Cold Brew', desc: '18-hour steep, served over ice', price: '$7', cat: 'Coffee', veg: true, tags: ['veg'], story: 'Eighteen hours in cold water pulls sweetness without the bite of heat.' }
+];
+
+const LOCATIONS = [
+  { key: 'heritage', name: 'Heritage · Tanjong Pagar', address: '43 Tanjong Pagar Road, #01-01, Singapore 088464', hours: '8am – 10pm, daily', open: [8, 22, [0, 1, 2, 3, 4, 5, 6]], serves: 'Day menu, night menu, full bar', bookable: true, map: 'https://maps.google.com/?q=43+Tanjong+Pagar+Road+Singapore', photo: 'images/loc-tanjong.webp' },
+  { key: 'uec', name: 'Upper East Coast', address: '6 Upper East Coast Road, Singapore 455200', hours: '8am – 10pm, daily', open: [8, 22, [0, 1, 2, 3, 4, 5, 6]], serves: 'Day menu, night menu, pet-friendly outdoors', bookable: true, map: 'https://maps.google.com/?q=6+Upper+East+Coast+Road+Singapore', photo: 'images/loc-eastcoast.webp' },
+  { key: 'asia', name: 'Asia Square', address: '8 Marina View, #01-01, Asia Square Tower 1, Singapore 018960', hours: '8am – 5pm, Mon – Fri', open: [8, 17, [1, 2, 3, 4, 5]], serves: 'Drinks and pastries only', bookable: false, map: 'https://maps.google.com/?q=Asia+Square+Tower+1+Singapore', photo: 'images/loc-asiasquare.webp' }
+];
+
+const SOCIAL = [
+  [
+    { type: 'image', src: 'images/ig-1.jpg', ratio: '2/3', title: 'Kerbside at Tanjong Pagar', caption: 'The lunch crowd under the red awnings' },
+    { type: 'video', src: 'media/ig-vid-1.mp4', ratio: '4/5', title: 'Twenty-five seconds', caption: 'Dialling in the morning grind' },
+    { type: 'image', src: 'images/ig-3.jpg', ratio: '5/4', title: 'The long marble bar', caption: 'Best seat for watching the pour' },
+    { type: 'image', src: 'images/ig-5.jpg', ratio: '4/5', title: 'Buckwheat pancake', caption: 'Mascarpone, berries, granola' },
+    { type: 'image', src: 'images/ig-2.jpg', ratio: '2/3', title: 'Heritage, on the brick', caption: 'The sign that marks the room' },
+    { type: 'image', src: 'images/cup-c.webp', ratio: '5/4', title: 'Flat white, cut clean', caption: 'Six ounces, two ristretto shots' },
+    { type: 'image', src: 'images/ig-4.jpg', ratio: '4/5', title: 'Between services', caption: 'Warm light, no queue' },
+    { type: 'image', src: 'images/keychains.webp', ratio: '5/4', title: 'Anniversary charms', caption: 'Limited run, in the rooms only' },
+    { type: 'image', src: 'images/ig-6.jpg', ratio: '4/5', title: 'Cut into it', caption: 'Pancake, salmon rillette, ravioli' }
+  ],
+  [
+    { type: 'video', src: 'media/ig-vid-2.mp4', ratio: '2/3', title: 'Two on the tray', caption: 'Flat white and a short black' },
+    { type: 'image', src: 'images/loc-tanjong.webp', ratio: '4/5', title: 'Heritage frontage', caption: 'Tanjong Pagar Road, awnings out' },
+    { type: 'image', src: 'images/sourdough.webp', ratio: '5/4', title: 'Sourdough, cut warm', caption: 'Baked in house every morning' },
+    { type: 'image', src: 'images/loc-eastcoast.webp', ratio: '2/3', title: 'Upper East Coast', caption: 'Green banquettes, round tables' },
+    { type: 'image', src: 'images/menu-food.webp', ratio: '4/5', title: 'Two breakfasts', caption: 'The order most tables land on' },
+    { type: 'image', src: 'images/holding-coffee.webp', ratio: '5/4', title: 'Straight off the bar', caption: 'Both from the same fortnight roast' },
+    { type: 'image', src: 'images/loc-asiasquare.webp', ratio: '4/5', title: 'Asia Square, opening', caption: 'Two groups, three grinders' },
+    { type: 'image', src: 'images/food-c.webp', ratio: '2/3', title: 'Night menu, plated', caption: 'From 6pm at Heritage' },
+    { type: 'image', src: 'images/cherries.webp', ratio: '5/4', title: 'Harvest, Laos', caption: 'Where the next lot is coming from' }
+  ]
+];
+
+
+
+const NAV = [
+  { label: 'Menu', href: '#menu', emoji: '🍳' },
+  { label: 'Shop', href: '#shop', emoji: '🫘' },
+  { label: 'Our Story', href: '#story', emoji: '⛵' },
+  { label: 'Locations', href: '#locations', emoji: '📍' },
+  { label: 'Careers', href: '#careers', emoji: '👋' }
+];
+
+const PAGES = ['home', 'menu', 'story', 'shop', 'locations', 'reservations', 'careers'];
+const FLAVOURS = ['All', 'Berry & fruit', 'Floral & tea', 'Chocolate & nut', 'Sweet & caramel'];
+
+class Component extends DCLogic {
+  state = {
+    page: 'home', navOpen: false, navHover: -1, filter: 'All', flavour: 'All',
+    bean: null, cart: {}, cartOpen: false, checkout: 'idle',
+    res: { outlet: 'Heritage · Tanjong Pagar', party: '2', time: '10:00am', date: (function () {
+      const n = new Date();
+      const t = new Date(n.getTime() + (n.getTimezoneOffset() * 60000) + 8 * 3600000);
+      return t.getFullYear() + '-' + String(t.getMonth() + 1).padStart(2, '0') + '-' + String(t.getDate()).padStart(2, '0');
+    })() },
+    resDone: false, chrome: 113, socialPage: 0, socialFade: false, roleOpen: false, applyOpen: false, applyDone: false
+  };
+
+  measure = () => {
+    const el = document.getElementById('focr-chrome');
+    const chrome = el ? Math.round(el.getBoundingClientRect().height) : 113;
+    if (chrome !== this.state.chrome) this.setState({ chrome });
+  };
+
+  scrub() {
+    const sec = document.getElementById('focr-hero');
+    const v = document.getElementById('focr-hero-video');
+    if (!sec || !v) return;
+    v.muted = true; v.defaultMuted = true;
+    if (v.dataset.scrubbed) return;
+    if (this.onScrub) {
+      window.removeEventListener('scroll', this.onScrub);
+      window.removeEventListener('resize', this.onScrub);
+      this.onScrub = null;
+    }
+    v.dataset.scrubbed = '1';
+    const bar = document.getElementById('focr-hero-progress');
+    const bands = Array.prototype.map.call(document.querySelectorAll('[data-hero-band]'), el => ({
+      el, a: parseFloat(el.dataset.a) || 0, b: parseFloat(el.dataset.b) || 1, out: el.dataset.mode === 'out', last: -1
+    }));
+    let target = 0, cur = 0, raf = null, dur = 0, seeking = false;
+    const clamp = x => x < 0 ? 0 : x > 1 ? 1 : x;
+    const ease = x => x * x * (3 - 2 * x);
+    const ready = () => {
+      if (!v.duration || !isFinite(v.duration)) return;
+      dur = v.duration;
+      v.style.opacity = '1';
+      paint();
+    };
+    ['loadedmetadata', 'loadeddata', 'canplay', 'durationchange'].forEach(ev => v.addEventListener(ev, ready));
+    if (v.readyState >= 1) ready();
+    v.load();
+    const done = () => { seeking = false; };
+    ['seeked', 'timeupdate', 'error', 'stalled', 'suspend'].forEach(ev => v.addEventListener(ev, done));
+    const paint = () => {
+      if (dur && !seeking) {
+        const t = cur * Math.max(0, dur - 0.05);
+        if (Math.abs(v.currentTime - t) > 0.015) {
+          seeking = true;
+          clearTimeout(this.seekT);
+          this.seekT = setTimeout(done, 240);
+          try { v.currentTime = t; } catch (err) { seeking = false; }
+        }
+      }
+      if (bar) bar.style.width = (cur * 100).toFixed(2) + '%';
+      bands.forEach(bd => {
+        let o;
+        if (bd.out) o = 1 - ease(clamp((cur - bd.a) / (bd.b - bd.a)));
+        else {
+          const w = bd.b - bd.a, r = w * 0.3;
+          o = cur <= bd.a || cur >= bd.b ? 0
+            : cur < bd.a + r ? ease((cur - bd.a) / r)
+            : cur > bd.b - r ? ease((bd.b - cur) / r) : 1;
+        }
+        if (Math.abs(o - bd.last) < 0.004) return;
+        bd.last = o;
+        bd.el.style.opacity = o.toFixed(3);
+        if (!bd.out) bd.el.style.transform = 'translateY(' + (-50 + (1 - o) * 3) + '%)';
+      });
+    };
+    const tick = () => {
+      cur += (target - cur) * 0.14;
+      if (Math.abs(target - cur) < 0.0006) cur = target;
+      paint();
+      raf = cur === target ? null : requestAnimationFrame(tick);
+    };
+    this.onScrub = () => {
+      const total = sec.offsetHeight - window.innerHeight;
+      target = clamp(-sec.getBoundingClientRect().top / (total || 1));
+      if (!raf) raf = requestAnimationFrame(tick);
+    };
+    window.addEventListener('scroll', this.onScrub, { passive: true });
+    window.addEventListener('resize', this.onScrub);
+    this.onScrub();
+    paint();
+  }
+
+  socialVideos() {
+    const vids = Array.prototype.slice.call(document.querySelectorAll('[data-socialvideo]'));
+    if (!vids.length) return;
+    vids.forEach(v => { v.muted = true; v.defaultMuted = true; });
+    if (!this.socialIo) {
+      this.socialIo = new IntersectionObserver(es => es.forEach(e => {
+        const v = e.target;
+        v.muted = true;
+        if (e.isIntersecting) {
+          const playing = Array.prototype.slice.call(document.querySelectorAll('[data-socialvideo]')).some(o => o !== v && !o.paused);
+          if (!playing && v.paused) v.play().catch(() => {});
+        } else if (!v.paused) v.pause();
+      }), { threshold: 0.35 });
+    }
+    vids.forEach(v => {
+      if (v.dataset.observed) return;
+      v.dataset.observed = '1';
+      this.socialIo.observe(v);
+    });
+  }
+
+  componentDidMount() {
+    this.measure();
+    setTimeout(() => this.scrub(), 60);
+    setTimeout(() => this.socialVideos(), 200);
+    window.addEventListener('resize', this.measure);
+    setTimeout(this.measure, 400);
+    this.sync = () => {
+      const h = (location.hash || '').replace('#', '');
+      this.setState({ page: PAGES.indexOf(h) >= 0 ? h : 'home', navOpen: false, bean: null, cartOpen: false });
+      window.scrollTo(0, 0);
+      if (this.socialIo) { this.socialIo.disconnect(); this.socialIo = null; }
+      [40, 120, 300, 700].forEach(ms => setTimeout(() => { this.scrub(); this.socialVideos(); }, ms));
+    };
+    this.sync();
+    window.addEventListener('hashchange', this.sync);
+    this.onKey = e => {
+      if (!this.state.bean) return;
+      if (e.key === 'ArrowRight') this.stepBean(1);
+      if (e.key === 'ArrowLeft') this.stepBean(-1);
+      if (e.key === 'Escape') this.setState({ bean: null });
+    };
+    window.addEventListener('keydown', this.onKey);
+
+    this.io = new IntersectionObserver((es) => es.forEach(e => {
+      if (e.isIntersecting) { e.target.style.animation = 'focr-in .7s cubic-bezier(.2,.7,.2,1) both'; this.io.unobserve(e.target); }
+    }), { threshold: 0.15 });
+    this.observe();
+    this.clock = setInterval(() => this.forceUpdate(), 60000);
+  }
+
+  componentDidUpdate() {
+    this.observe();
+    this.socialVideos();
+    if (this.state.page === 'home') {
+      const v = document.getElementById('focr-hero-video');
+      if (v && !v.dataset.scrubbed) this.scrub();
+    }
+  }
+
+  observe() {
+    if (!this.io) return;
+    document.querySelectorAll('[data-reveal]').forEach(el => {
+      if (el.dataset.revealed) return;
+      el.dataset.revealed = '1';
+      el.style.opacity = '0';
+      this.io.observe(el);
+    });
+    clearTimeout(this.safety);
+    this.safety = setTimeout(() => document.querySelectorAll('[data-reveal]').forEach(el => { el.style.opacity = '1'; }), 2500);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('hashchange', this.sync);
+    window.removeEventListener('resize', this.measure);
+    window.removeEventListener('keydown', this.onKey);
+    if (this.onScrub) { window.removeEventListener('scroll', this.onScrub); window.removeEventListener('resize', this.onScrub); }
+    if (this.io) this.io.disconnect();
+    if (this.socialIo) this.socialIo.disconnect();
+    clearInterval(this.clock);
+    clearTimeout(this.socialT);
+  }
+
+  pageSocial(d) {
+    if (this.state.socialFade) return;
+    this.setState({ socialFade: true });
+    clearTimeout(this.socialT);
+    this.socialT = setTimeout(() => {
+      this.setState(st => ({ socialPage: (st.socialPage + d + SOCIAL.length) % SOCIAL.length }));
+      setTimeout(() => this.setState({ socialFade: false }), 40);
+    }, 260);
+  }
+
+  stepBean(d) {
+    const list = this.visibleProducts();
+    const i = list.findIndex(p => p.id === this.state.bean);
+    if (i < 0) return;
+    this.setState({ bean: list[(i + d + list.length) % list.length].id });
+  }
+
+  visibleProducts() {
+    const f = this.state.flavour;
+    return f === 'All' ? PRODUCTS : PRODUCTS.filter(p => p.flavours.indexOf(f) >= 0);
+  }
+
+  pill(active) {
+    return {
+      bg: active ? '#201e1d' : 'transparent',
+      fg: active ? '#f5ead8' : '#201e1d',
+      border: active ? '#201e1d' : 'rgba(32,30,29,.22)'
+    };
+  }
+
+  sg() {
+    const n = new Date();
+    return new Date(n.getTime() + (n.getTimezoneOffset() * 60000) + 8 * 3600000);
+  }
+
+  renderVals() {
+    const s = this.state;
+    const sgNow = this.sg(), hour = sgNow.getHours() + sgNow.getMinutes() / 60, day = sgNow.getDay();
+    const showOpen = this.props.showOpenNow ?? true;
+    resolveAssets();
+    const heroSrc = RES((this.props.heroVideoSrc || '').trim() || 'media/espresso-pour.mp4');
+
+    const locations = LOCATIONS.map(l => {
+      const isOpen = showOpen && l.open[2].indexOf(day) >= 0 && hour >= l.open[0] && hour < l.open[1];
+      return Object.assign({}, l, {
+        cover: l.photo,
+        dot: isOpen ? '#7a8a5e' : 'rgba(32,30,29,.3)',
+        status: showOpen ? (isOpen ? 'Open now' : 'Closed now') : l.hours
+      });
+    });
+
+    const cats = ['All', 'Coffee', 'All-day', 'Night', 'Veg'];
+    const filters = cats.map(c => Object.assign({ label: c, set: () => this.setState({ filter: c }) }, this.pill(s.filter === c)));
+    const menuList = MENU.filter(m => s.filter === 'All' || (s.filter === 'Veg' ? m.veg : m.cat === s.filter))
+      .map((m, i) => Object.assign({}, m, {
+        slot: 'dish-' + m.name.toLowerCase().replace(/[^a-z]+/g, '-'),
+        img: DISH_IMGS[i % DISH_IMGS.length],
+        tags: (m.tags || []).map(k => T[k]).filter(Boolean)
+      }));
+
+    const flavourFilters = FLAVOURS.map(c => Object.assign({ label: c, set: () => this.setState({ flavour: c }) }, this.pill(s.flavour === c)));
+    const products = this.visibleProducts().map(pr => Object.assign({}, pr, {
+      price: '$' + pr.price.toFixed(2),
+      open: () => this.setState({ bean: pr.id }),
+      add: () => this.add(pr.id)
+    }));
+
+    const beanRaw = PRODUCTS.find(x => x.id === s.bean);
+    const bean = beanRaw ? Object.assign({}, beanRaw, { price: '$' + beanRaw.price.toFixed(2) }) : {};
+
+    const lines = Object.keys(s.cart).filter(k => s.cart[k] > 0).map(k => {
+      const pr = PRODUCTS.find(x => x.id === k);
+      return {
+        id: k, name: pr.name, qty: s.cart[k], img: pr.img, price: '$' + pr.price.toFixed(2),
+        inc: () => this.add(k, 1), dec: () => this.add(k, -1)
+      };
+    });
+    const sub = lines.reduce((t, l) => t + PRODUCTS.find(x => x.id === l.id).price * l.qty, 0);
+    const ship = sub === 0 || sub >= 60 ? 0 : 6;
+    const count = lines.reduce((t, l) => t + l.qty, 0);
+
+    const navItems = NAV.map((n, i) => Object.assign({}, n, {
+      enter: () => this.setState({ navHover: i }),
+      leave: () => this.setState({ navHover: -1 }),
+      eStyle: 'display:inline-block;overflow:hidden;font-size:16px;line-height:1;transition:max-width .2s cubic-bezier(.2,.7,.2,1),opacity .2s ease,transform .2s cubic-bezier(.2,.7,.2,1),margin-right .2s ease;'
+        + (s.navHover === i
+          ? 'max-width:24px;opacity:1;transform:translateY(0) scale(1);margin-right:7px;'
+          : 'max-width:0px;opacity:0;transform:translateY(3px) scale(.6);margin-right:0;')
+    }));
+
+    const resPill = (key, val) => Object.assign({ label: val, set: () => this.setState(st => ({ res: Object.assign({}, st.res, { [key]: val }) })) }, this.pill(s.res[key] === val));
+    const dateLabel = s.res.date ? new Date(s.res.date + 'T00:00:00').toLocaleDateString('en-SG', { weekday: 'long', day: 'numeric', month: 'long' }) : 'pick a date';
+
+    return {
+      yes: true, zero: 0,
+      heroVideoSrc: heroSrc,
+      stickyTop: (s.chrome + 8) + 'px',
+      isHome: s.page === 'home', isMenu: s.page === 'menu', isStory: s.page === 'story',
+      isShop: s.page === 'shop', isLocations: s.page === 'locations',
+      isRes: s.page === 'reservations', isCareers: s.page === 'careers',
+      navItems, navOpen: s.navOpen,
+      toggleNav: () => this.setState(st => ({ navOpen: !st.navOpen })),
+      closeNav: () => this.setState({ navOpen: false }),
+      locations, filters, menuList, flavourFilters, products,
+      shelf: [
+        { id: 'amederaro', img: 'images/bean-amederaro.webp', name: 'Amederaro Konga', origin: 'Ethiopia', offset: '0px' },
+        { id: 'kagumo', img: 'images/bean-kagumo.webp', name: 'Kagumo NH', origin: 'Kenya', offset: '34px' },
+        { id: 'waliki', img: 'images/bean-waliki.webp', name: 'Waliki', origin: 'Bolivia', offset: '68px' }
+      ],
+      sgTime: sgNow.toLocaleTimeString('en-SG', { hour: 'numeric', minute: '2-digit', hour12: true }),
+      storyStats: [{ n: '2018', label: 'First cafe on Tanjong Pagar Road' }, { n: '3', label: 'Rooms across the island' }, { n: '14', label: 'Days between blend rotations' }],
+      socialItems: SOCIAL[s.socialPage % SOCIAL.length].map((it, i) => Object.assign({}, it, {
+        isVideo: it.type === 'video', isImage: it.type === 'image', href: IG,
+        toggle: (e) => { const v = e.currentTarget; v.muted = true; v.defaultMuted = true; if (v.paused) v.play().catch(() => {}); else v.pause(); }
+      })),
+      socialFade: s.socialFade ? 'opacity:0;transform:translateY(10px)' : 'opacity:1;transform:translateY(0)',
+      socialPrev: () => this.pageSocial(-1),
+      socialNext: () => this.pageSocial(1),
+      roleOpen: s.roleOpen, roleTurn: s.roleOpen ? '45deg' : '0deg',
+      toggleRole: () => this.setState(st => ({ roleOpen: !st.roleOpen })),
+      beanOpen: !!beanRaw, bean,
+      beanPrev: (e) => { e.stopPropagation(); this.stepBean(-1); },
+      beanNext: (e) => { e.stopPropagation(); this.stepBean(1); },
+      addBean: () => { this.add(s.bean); this.setState({ bean: null, cartOpen: true }); },
+      closeBean: () => this.setState({ bean: null }),
+      hasCart: count > 0, cartCount: count,
+      cartLines: lines, cartEmpty: lines.length === 0,
+      cartOpen: s.cartOpen,
+      openCart: () => this.setState({ cartOpen: true }),
+      closeCart: () => this.setState({ cartOpen: false, checkout: 'idle' }),
+      subtotal: '$' + sub.toFixed(2),
+      delivery: ship === 0 ? 'Free' : '$6.00',
+      total: '$' + (sub + ship).toFixed(2),
+      checkoutIdle: s.checkout === 'idle', checkoutForm: s.checkout === 'form', checkoutDone: s.checkout === 'done',
+      startCheckout: () => { if (lines.length) this.setState({ checkout: 'form' }); },
+      placeOrder: (e) => { e.preventDefault(); this.setState({ checkout: 'done', cart: {} }); },
+      resOutlets: ['Heritage · Tanjong Pagar', 'Upper East Coast'].map(v => resPill('outlet', v)),
+      resParty: ['1', '2', '3', '4', '5', '6', '7+'].map(v => resPill('party', v)),
+      resTimes: ['8:30am', '10:00am', '11:30am', '1:00pm', '6:30pm', '8:00pm'].map(v => resPill('time', v)),
+      resDate: s.res.date,
+      setResDate: (e) => { const v = e.target.value; this.setState(st => ({ res: Object.assign({}, st.res, { date: v }) })); },
+      resSummary: s.res.party + (s.res.party === '1' ? ' guest' : ' guests') + ' at ' + s.res.outlet.split(' · ')[0] + ', ' + dateLabel + ' at ' + s.res.time,
+      resForm: !s.resDone, resDone: s.resDone,
+      resSubmit: (e) => { e.preventDefault(); this.setState({ resDone: true }); },
+      resReset: () => this.setState({ resDone: false }),
+      applyDone: s.applyDone,
+      applyForm: !s.applyDone,
+      applyOpen: s.applyOpen,
+      applyLabel: s.applyOpen ? 'Close' : 'Apply for this role',
+      applyTurn: s.applyOpen ? '180deg' : '0deg',
+      applyPanel: s.applyOpen ? 'max-height:1600px;opacity:1;transform:translateY(0)' : 'max-height:0px;opacity:0;transform:translateY(-6px)',
+      toggleApply: () => this.setState(st => ({ applyOpen: !st.applyOpen })),
+      applySubmit: (e) => { e.preventDefault(); this.setState({ applyDone: true }); },
+      applyReset: () => this.setState({ applyDone: false })
+    };
+  }
+
+  add(id, d) {
+    this.setState(st => {
+      const c = Object.assign({}, st.cart);
+      c[id] = Math.max(0, (c[id] || 0) + (d || 1));
+      if (!c[id]) delete c[id];
+      return { cart: c };
+    });
+  }
+}
+</script>
+</body>
+</html>
